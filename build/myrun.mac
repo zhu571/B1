@@ -1,4 +1,2 @@
 /run/initialize
-##/gun/particle beta
-/gun/energy 10 MeV
-/run/beamOn 100000
+/run/beamOn 1000
