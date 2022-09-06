@@ -106,12 +106,12 @@ void RunAction::BeginOfRunAction(const G4Run*)
   //analysisManager->CreateNtupleIColumn("StepStatusPost");
   //analysisManager->CreateNtupleDColumn("EkPre");
   //analysisManager->CreateNtupleDColumn("EkPost");
-  //analysisManager->CreateNtupleDColumn("xPre");
-  //analysisManager->CreateNtupleDColumn("yPre");
-  //analysisManager->CreateNtupleDColumn("zPre");
-  //analysisManager->CreateNtupleDColumn("xPost");
-  //analysisManager->CreateNtupleDColumn("yPost");
-  //analysisManager->CreateNtupleDColumn("zPost");
+  analysisManager->CreateNtupleDColumn("xPre");
+  analysisManager->CreateNtupleDColumn("yPre");
+  analysisManager->CreateNtupleDColumn("zPre");
+  analysisManager->CreateNtupleDColumn("xPost");
+  analysisManager->CreateNtupleDColumn("yPost");
+  analysisManager->CreateNtupleDColumn("zPost");
   //analysisManager->CreateNtupleDColumn("xMomentumDirectionPre");
   //analysisManager->CreateNtupleDColumn("yMomentumDirectionPre");
   //analysisManager->CreateNtupleDColumn("zMomentumDirectionPre");

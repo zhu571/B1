@@ -157,7 +157,21 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
   //ParentID = aTrack->GetParentID();
   
   G4StepPoint* preStepPoint = step->GetPreStepPoint();
+  G4StepPoint* postStepPoint = step->GetPostStepPoint();
+
+
   VolNamePre = preStepPoint->GetPhysicalVolume()->GetName();
+ 
+ 
+ // G4LogicalVolume
+  preStepVolume = preStepPoint->GetPhysicalVolume()->GetLogicalVolume();
+  if(postStepPoint->GetPhysicalVolume())//判断是否在world外
+    postStepVolume = postStepPoint->GetPhysicalVolume()->GetLogicalVolume();
+    
+    
+  PosPre = preStepPoint->GetPosition();
+  PosPost = postStepPoint->GetPosition();
+
 
   analysisManager->FillNtupleIColumn(0, EventID);
   //analysisManager->FillNtupleIColumn(1, ParentID);
@@ -165,6 +179,12 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
   analysisManager->FillNtupleSColumn(1, PName);
   analysisManager->FillNtupleDColumn(2, EDep);
   analysisManager->FillNtupleSColumn(3, VolNamePre);
+  analysisManager->FillNtupleDColumn(4, PosPre.x());
+  analysisManager->FillNtupleDColumn(5, PosPre.y());
+  analysisManager->FillNtupleDColumn(6, PosPre.z());
+  analysisManager->FillNtupleDColumn(7, PosPost.x());
+  analysisManager->FillNtupleDColumn(8, PosPost.y());
+  analysisManager->FillNtupleDColumn(9, PosPost.z());
 
   analysisManager->AddNtupleRow();
 
