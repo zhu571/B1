@@ -105,7 +105,7 @@ int main(int argc,char** argv)
     mtrunManager->SetUserInitialization(new DetectorConstruction());
 
     //physics
-    mtrunManager->SetUserInitialization(new QGSP_BERT());
+    mtrunManager->SetUserInitialization(new QGSP_BIC());
 
     // User action initialization
     mtrunManager->SetUserInitialization(new ActionInitialization());

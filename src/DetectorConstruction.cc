@@ -238,9 +238,11 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
   //
   G4double sizeXYZ = 1.0*m;
 
-  G4double dssdX = 5.0*cm;
-  G4double dssdY = 5.0*cm;
-  G4double dssdZ = 304.0*um;
+  /*G4double dssdX = 5.0*cm;
+  G4double dssdY = 5.0*cm;*/
+  G4double dssd1Z = 142.0*um;
+  G4double dssd2Z = 40.0*um;
+  G4double dssd3Z = 304.0*um;
   G4double dssddx = 0.3125*cm;
   G4double dssddy = 0.3125*cm;
 
@@ -263,13 +265,23 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
                       0,
                       checkOverlaps);
 
-  char dssd1name[200];
-  char dssd2name[200];
-  char dssd3name[200];
+  char dssd1name[2000];
+  char dssd2name[2000];
+  char dssd3name[2000];
 
-  G4Box* solidDSSD =    
-    new G4Box("DSSD",                    //its name
-  	      0.5*dssddx, 0.5*dssddy, 0.5*dssdZ); //its size
+  G4Box* solidDSSD1 =    
+    new G4Box("DSSD3",                    //its name
+  	      0.5*dssddx, 0.5*dssddy, 0.5*dssd1Z); //its size
+
+
+  G4Box* solidDSSD2 =    
+    new G4Box("DSSD3",                    //its name
+  	      0.5*dssddx, 0.5*dssddy, 0.5*dssd2Z); //its size
+
+
+  G4Box* solidDSSD3 =    
+    new G4Box("DSSD3",                    //its name
+  	      0.5*dssddx, 0.5*dssddy, 0.5*dssd3Z); //its size
 
  /* logicDSSD =
     new G4LogicalVolume(solidDSSD,            //its solid
@@ -290,18 +302,18 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
 {
   for (size_t j = 0; j < 16; j++)
   {
-    int num = 10*i+j;
-    sprintf(dssd2name,"dssd2|%04d",num);
+    int num1 = 10*i+j;
+    sprintf(dssd2name,"dssd2|%04d",num1);
 
-    logicDSSD2[num] =
-     new G4LogicalVolume(solidDSSD,
+    logicDSSD2[num1] =
+     new G4LogicalVolume(solidDSSD2,
                          dssd_mat,
                          dssd2name);
                       
-    physDSSD2[num] = 
+    physDSSD2[num1] = 
     new G4PVPlacement(0,
                       G4ThreeVector((2.484375-0.3125*j)*cm,(2.484375-0.3125*i)*cm,0),
-                      logicDSSD2[num],
+                      logicDSSD2[num1],
                       dssd2name,
                       logicWorld,
                       false,
@@ -313,18 +325,18 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
 {
   for (size_t m = 0; m < 16; m++)
   {
-    int num = 10*l+m;
-    sprintf(dssd1name,"dssd1|%04d",num);
+    int num2 = 10*l+m;
+    sprintf(dssd1name,"dssd1|%04d",num2);
 
-    logicDSSD1[num] =
-     new G4LogicalVolume(solidDSSD,
+    logicDSSD1[num2] =
+     new G4LogicalVolume(solidDSSD1,
                          dssd_mat,
                          dssd1name);
                       
-    physDSSD1[num] = 
+    physDSSD1[num2] = 
     new G4PVPlacement(0,
                       G4ThreeVector((2.484375-0.3125*m)*cm,(2.484375-0.3125*l)*cm,1*cm),
-                      logicDSSD1[num],
+                      logicDSSD1[num2],
                       dssd1name,
                       logicWorld,
                       false,
@@ -336,18 +348,18 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
 {
   for (size_t o = 0; o < 16; o++)
   {
-    int num = 10*u+o;
-    sprintf(dssd3name,"dssd3|%04d",num);
+    int num3 = 10*u+o;
+    sprintf(dssd3name,"dssd3|%04d",num3);
 
-    logicDSSD3[num] =
-     new G4LogicalVolume(solidDSSD,
+    logicDSSD3[num3] =
+     new G4LogicalVolume(solidDSSD3,
                          dssd_mat,
                          dssd3name);
                       
-    physDSSD3[num] = 
+    physDSSD3[num3] = 
     new G4PVPlacement(0,
                       G4ThreeVector((2.484375-0.3125*o)*cm,(2.484375-0.3125*u)*cm,-1*cm),
-                      logicDSSD3[num],
+                      logicDSSD3[num3],
                       dssd3name,
                       logicWorld,
                       false,
@@ -364,7 +376,7 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
 
     // visualization attributes ------------------------------------------------
     //可视化界面几何体颜色设置（可有可无）
-    
+  /*  
     G4VisAttributes* visAttributes = new G4VisAttributes(G4Colour(1.0,1.0,1.0));
     //visAttributes->SetVisibility(false);//不显示边框s
     logicWorld->SetVisAttributes(visAttributes);
@@ -409,6 +421,7 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
       }
       
     }
+    */
     
 //    logicDSSD->SetVisAttributes(visAttributes);
 //    fVisAttributes.push_back(visAttributes);

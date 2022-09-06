@@ -80,7 +80,7 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
   // particleGun->SetParticleCharge(IonQ);
 
   //Geant4已经定义的粒子
-  pp = particleTable->FindParticle("e-");
+  pp = particleTable->FindParticle("proton");
 
   // -------------------------
   
@@ -164,12 +164,14 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
   G4double v2yl = v23y +v2y;
   G4double v2zl = v23z +v2z;
 
-
+/*
   G4double cosPX2l = v2xl/(v2xl*v2xl+v2yl*v2yl+v2zl*v2zl);
   G4double cosPY2l = v2yl/(v2xl*v2xl+v2yl*v2yl+v2zl*v2zl);
   G4double cosPZ2l = v2zl/(v2xl*v2xl+v2yl*v2yl+v2zl*v2zl);
+  */
+//  G4ThreeVector directPri2(cosPX2l,cosPY2l,cosPZ2l);
 
-  G4ThreeVector directPri2(cosPX2l,cosPY2l,cosPZ2l);
+  G4ThreeVector directPri2(v2xl,v2yl,v2zl);
   ///particle
   particleGun->SetParticleMomentumDirection(directPri2);
 
