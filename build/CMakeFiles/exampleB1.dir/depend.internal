@@ -1726,6 +1726,8 @@ CMakeFiles/exampleB1.dir/src/PrimaryGeneratorAction.cc.o
  /home/zhu/G4/geant4-install/include/Geant4/G4TrackingMessenger.hh
  /home/zhu/G4/geant4-install/include/Geant4/G4TrajectoryContainer.hh
  /home/zhu/G4/geant4-install/include/Geant4/G4Transform3D.hh
+ /home/zhu/G4/geant4-install/include/Geant4/G4Tubs.hh
+ /home/zhu/G4/geant4-install/include/Geant4/G4Tubs.icc
  /home/zhu/G4/geant4-install/include/Geant4/G4TwoVector.hh
  /home/zhu/G4/geant4-install/include/Geant4/G4Types.hh
  /home/zhu/G4/geant4-install/include/Geant4/G4UAdapter.hh
@@ -1735,6 +1737,7 @@ CMakeFiles/exampleB1.dir/src/PrimaryGeneratorAction.cc.o
  /home/zhu/G4/geant4-install/include/Geant4/G4UImessenger.hh
  /home/zhu/G4/geant4-install/include/Geant4/G4UIparameter.hh
  /home/zhu/G4/geant4-install/include/Geant4/G4UItokenNum.hh
+ /home/zhu/G4/geant4-install/include/Geant4/G4UTubs.hh
  /home/zhu/G4/geant4-install/include/Geant4/G4UserStackingAction.hh
  /home/zhu/G4/geant4-install/include/Geant4/G4UserSteppingAction.hh
  /home/zhu/G4/geant4-install/include/Geant4/G4UserTrackingAction.hh

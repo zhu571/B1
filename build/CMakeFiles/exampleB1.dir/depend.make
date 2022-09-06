@@ -1725,6 +1725,8 @@ CMakeFiles/exampleB1.dir/src/PrimaryGeneratorAction.cc.o: /home/zhu/G4/geant4-in
 CMakeFiles/exampleB1.dir/src/PrimaryGeneratorAction.cc.o: /home/zhu/G4/geant4-install/include/Geant4/G4TrackingMessenger.hh
 CMakeFiles/exampleB1.dir/src/PrimaryGeneratorAction.cc.o: /home/zhu/G4/geant4-install/include/Geant4/G4TrajectoryContainer.hh
 CMakeFiles/exampleB1.dir/src/PrimaryGeneratorAction.cc.o: /home/zhu/G4/geant4-install/include/Geant4/G4Transform3D.hh
+CMakeFiles/exampleB1.dir/src/PrimaryGeneratorAction.cc.o: /home/zhu/G4/geant4-install/include/Geant4/G4Tubs.hh
+CMakeFiles/exampleB1.dir/src/PrimaryGeneratorAction.cc.o: /home/zhu/G4/geant4-install/include/Geant4/G4Tubs.icc
 CMakeFiles/exampleB1.dir/src/PrimaryGeneratorAction.cc.o: /home/zhu/G4/geant4-install/include/Geant4/G4TwoVector.hh
 CMakeFiles/exampleB1.dir/src/PrimaryGeneratorAction.cc.o: /home/zhu/G4/geant4-install/include/Geant4/G4Types.hh
 CMakeFiles/exampleB1.dir/src/PrimaryGeneratorAction.cc.o: /home/zhu/G4/geant4-install/include/Geant4/G4UAdapter.hh
@@ -1734,6 +1736,7 @@ CMakeFiles/exampleB1.dir/src/PrimaryGeneratorAction.cc.o: /home/zhu/G4/geant4-in
 CMakeFiles/exampleB1.dir/src/PrimaryGeneratorAction.cc.o: /home/zhu/G4/geant4-install/include/Geant4/G4UImessenger.hh
 CMakeFiles/exampleB1.dir/src/PrimaryGeneratorAction.cc.o: /home/zhu/G4/geant4-install/include/Geant4/G4UIparameter.hh
 CMakeFiles/exampleB1.dir/src/PrimaryGeneratorAction.cc.o: /home/zhu/G4/geant4-install/include/Geant4/G4UItokenNum.hh
+CMakeFiles/exampleB1.dir/src/PrimaryGeneratorAction.cc.o: /home/zhu/G4/geant4-install/include/Geant4/G4UTubs.hh
 CMakeFiles/exampleB1.dir/src/PrimaryGeneratorAction.cc.o: /home/zhu/G4/geant4-install/include/Geant4/G4UserStackingAction.hh
 CMakeFiles/exampleB1.dir/src/PrimaryGeneratorAction.cc.o: /home/zhu/G4/geant4-install/include/Geant4/G4UserSteppingAction.hh
 CMakeFiles/exampleB1.dir/src/PrimaryGeneratorAction.cc.o: /home/zhu/G4/geant4-install/include/Geant4/G4UserTrackingAction.hh

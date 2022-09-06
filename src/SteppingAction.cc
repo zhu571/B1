@@ -160,7 +160,7 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
   G4StepPoint* postStepPoint = step->GetPostStepPoint();
 
 
-  VolNamePre = preStepPoint->GetPhysicalVolume()->GetName();
+
  
  
  // G4LogicalVolume
@@ -170,7 +170,14 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
     
     
   PosPre = preStepPoint->GetPosition();
+  VolNamePre = preStepPoint->GetPhysicalVolume()->GetName();
+
+
+
+
   PosPost = postStepPoint->GetPosition();
+    if(postStepPoint->GetPhysicalVolume()) VolNamePost=postStepPoint->GetPhysicalVolume()->GetName();//判断是否在world外
+  else VolNamePost = "**";
 
 
   analysisManager->FillNtupleIColumn(0, EventID);
@@ -179,12 +186,13 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
   analysisManager->FillNtupleSColumn(1, PName);
   analysisManager->FillNtupleDColumn(2, EDep);
   analysisManager->FillNtupleSColumn(3, VolNamePre);
-  analysisManager->FillNtupleDColumn(4, PosPre.x());
-  analysisManager->FillNtupleDColumn(5, PosPre.y());
-  analysisManager->FillNtupleDColumn(6, PosPre.z());
-  analysisManager->FillNtupleDColumn(7, PosPost.x());
-  analysisManager->FillNtupleDColumn(8, PosPost.y());
-  analysisManager->FillNtupleDColumn(9, PosPost.z());
+  analysisManager->FillNtupleSColumn(4, VolNamePost);
+  analysisManager->FillNtupleDColumn(5, PosPre.x());
+  analysisManager->FillNtupleDColumn(6, PosPre.y());
+  analysisManager->FillNtupleDColumn(7, PosPre.z());
+  analysisManager->FillNtupleDColumn(8, PosPost.x());
+  analysisManager->FillNtupleDColumn(9, PosPost.y());
+  analysisManager->FillNtupleDColumn(10, PosPost.z());
 
   analysisManager->AddNtupleRow();
 

@@ -32,6 +32,7 @@
 #include "G4LogicalVolumeStore.hh"
 #include "G4LogicalVolume.hh"
 #include "G4Box.hh"
+#include "G4Tubs.hh"
 #include "G4RunManager.hh"
 #include "G4ParticleGun.hh"
 #include "G4ParticleTable.hh"
@@ -133,12 +134,12 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
 
   particleGun->SetParticleEnergy(Ep2);
 
-
+/*
   // primary particle position
   G4double x2 = 0.;
   G4double y2 = 0.;
-  G4double z2 = 0.;
-  particleGun->SetParticlePosition(G4ThreeVector(x2, y2, z2));
+  G4double z2 = 0.;*/
+  particleGun->SetParticlePosition(G4ThreeVector(x1, y1, z1));
 
 
   // primary particle moving direction

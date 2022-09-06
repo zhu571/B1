@@ -265,9 +265,9 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
                       0,
                       checkOverlaps);
 
-  char dssd1name[2000];
-  char dssd2name[2000];
-  char dssd3name[2000];
+  char dssd1name[200];
+  char dssd2name[200];
+  char dssd3name[200];
 
   G4Box* solidDSSD1 =    
     new G4Box("DSSD3",                    //its name
@@ -302,7 +302,7 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
 {
   for (size_t j = 0; j < 16; j++)
   {
-    int num1 = 10*i+j;
+    int num1 = 16*i+j;
     sprintf(dssd2name,"dssd2|%04d",num1);
 
     logicDSSD2[num1] =
@@ -325,7 +325,7 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
 {
   for (size_t m = 0; m < 16; m++)
   {
-    int num2 = 10*l+m;
+    int num2 = 16*l+m;
     sprintf(dssd1name,"dssd1|%04d",num2);
 
     logicDSSD1[num2] =
@@ -348,7 +348,7 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
 {
   for (size_t o = 0; o < 16; o++)
   {
-    int num3 = 10*u+o;
+    int num3 = 16*u+o;
     sprintf(dssd3name,"dssd3|%04d",num3);
 
     logicDSSD3[num3] =

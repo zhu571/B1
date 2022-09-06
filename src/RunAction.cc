@@ -95,7 +95,7 @@ void RunAction::BeginOfRunAction(const G4Run*)
   //analysisManager->CreateNtupleDColumn("Charge");
   //analysisManager->CreateNtupleDColumn("MagneticMoment");
   analysisManager->CreateNtupleSColumn("VolNamePre");
-  //analysisManager->CreateNtupleSColumn("VolNamePost");
+  analysisManager->CreateNtupleSColumn("VolNamePost");
   //analysisManager->CreateNtupleDColumn("GlobalTimePre");
   //analysisManager->CreateNtupleDColumn("GlobalTimePost");
   //analysisManager->CreateNtupleDColumn("LocalTimePre");
