@@ -156,9 +156,9 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
   G4double v23y = v23*cosPY1;
   G4double v23z = v23*cosPZ1;
 
-  G4double v2x = v2*cosPX2;
-  G4double v2y = v2*cosPY2;
-  G4double v2z = v2*cosPZ2;
+  G4double v2x = v2c*cosPX2;
+  G4double v2y = v2c*cosPY2;
+  G4double v2z = v2c*cosPZ2;
 
   G4double v2xl = v23x +v2x;
   G4double v2yl = v23y +v2y;
