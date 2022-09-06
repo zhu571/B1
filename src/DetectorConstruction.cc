@@ -300,7 +300,7 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
                       
     physDSSD2[num] = 
     new G4PVPlacement(0,
-                      G4ThreeVector((24.84375-0.3125*j)*cm,(24.84375-0.3125*i)*cm,0),
+                      G4ThreeVector((2.484375-0.3125*j)*cm,(2.484375-0.3125*i)*cm,0),
                       logicDSSD2[num],
                       dssd2name,
                       logicWorld,
@@ -323,7 +323,7 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
                       
     physDSSD1[num] = 
     new G4PVPlacement(0,
-                      G4ThreeVector((24.84375-0.3125*m)*cm,(24.84375-0.3125*l)*cm,1*cm),
+                      G4ThreeVector((2.484375-0.3125*m)*cm,(2.484375-0.3125*l)*cm,1*cm),
                       logicDSSD1[num],
                       dssd1name,
                       logicWorld,
@@ -346,7 +346,7 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
                       
     physDSSD3[num] = 
     new G4PVPlacement(0,
-                      G4ThreeVector((24.84375-0.3125*o)*cm,(24.84375-0.3125*u)*cm,-1*cm),
+                      G4ThreeVector((2.484375-0.3125*o)*cm,(2.484375-0.3125*u)*cm,-1*cm),
                       logicDSSD3[num],
                       dssd3name,
                       logicWorld,
