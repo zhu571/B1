@@ -303,7 +303,7 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
   for (size_t j = 0; j < 16; j++)
   {
     int num1 = 16*i+j;
-    sprintf(dssd2name,"dssd2|%04d",num1);
+    sprintf(dssd2name,"dssd2|%d",num1);
 
     logicDSSD2[num1] =
      new G4LogicalVolume(solidDSSD2,
@@ -326,7 +326,7 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
   for (size_t m = 0; m < 16; m++)
   {
     int num2 = 16*l+m;
-    sprintf(dssd1name,"dssd1|%04d",num2);
+    sprintf(dssd1name,"dssd1|%d",num2);
 
     logicDSSD1[num2] =
      new G4LogicalVolume(solidDSSD1,
@@ -349,7 +349,7 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
   for (size_t o = 0; o < 16; o++)
   {
     int num3 = 16*u+o;
-    sprintf(dssd3name,"dssd3|%04d",num3);
+    sprintf(dssd3name,"dssd3|%d",num3);
 
     logicDSSD3[num3] =
      new G4LogicalVolume(solidDSSD3,
