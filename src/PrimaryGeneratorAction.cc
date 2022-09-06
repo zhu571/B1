@@ -170,7 +170,7 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
   G4double cosPZ2l = v2zl/(v2xl*v2xl+v2yl*v2yl+v2zl*v2zl);
 
   G4ThreeVector directPri2(cosPX2l,cosPY2l,cosPZ2l);
-
+  ///particle
   particleGun->SetParticleMomentumDirection(directPri2);
 
   //这个调用一次设置一次粒子，一次模拟要同时发射多个不同粒子就得多次调用它
