@@ -37,8 +37,7 @@ void dssd::Loop()
    TTree *tree=new TTree("tree","dssd");
 
    Int_t ID = -1;
-   TH1F *h1 = new TH1F("h1","",1000,0,10);
-   Double_t ene =0;
+//   Double_t ene =0;
    Int_t dssdxid =0;
    Int_t dssdyid =0;
 
@@ -121,9 +120,6 @@ void dssd::Loop()
 
 
    }
-   TCanvas* c1 = new TCanvas("c1");
-   h1->Draw();
-   h1->Write();
    tree->Write();
    opf->Close();
 }
