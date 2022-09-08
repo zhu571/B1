@@ -39,10 +39,14 @@ void dssd::Loop()
    Int_t ID = -1;
    TH1F *h1 = new TH1F("h1","",1000,0,10);
    Double_t ene =0;
+   Int_t dssdxid =0;
+   Int_t dssdyid =0;
 
 
 
-   tree->Branch("ene",  &ene,  "ene/D");
+   //tree->Branch("ene",  &ene,  "ene/D");
+   tree->Branch("dssdxid",  &dssdxid,  "dssdxid/I");
+   tree->Branch("dssdyid",  &dssdyid,  "dssdyid/I");
 
 
 
@@ -60,7 +64,7 @@ void dssd::Loop()
       // if (Cut(ientry) < 0) continue;
 
       //user code
-
+   /*
       if (VolNamePre[0]!='D') continue;
       if (PName[0]!='e') continue;
 
@@ -82,6 +86,38 @@ void dssd::Loop()
       ene += EDep;
       
       
+   */
+  if (xPre >0)
+  {
+      dssdxid = xPre/0.3125 + 1;
+  }
+   else if (xPre < 0)
+   {
+      dssdxid = xPre/0.3125 - 1;
+   }
+   else if (xPre = 0)
+   {
+      dssdxid = 0;
+   }
+
+   
+    if (yPre >0)
+  {
+      dssdxid = yPre/0.3125 + 1;
+  }
+   else if (yPre < 0)
+   {
+      dssdxid = yPre/0.3125 - 1;
+   }
+   else if (y2Pre = 0)
+   {
+      dssdxid = 0;
+   }
+
+  
+  
+   
+
 
 
    }
