@@ -116,7 +116,7 @@ void DetectorConstruction::DefineMaterials()
   //调用G4自身定义好的材料
   nist->FindOrBuildMaterial("G4_Galactic");//
   //nist->FindOrBuildElement("G4_Si");
-  nist->FindOrBuildMaterial("G4_Ge");//
+  //nist->FindOrBuildMaterial("G4_Ge");//
   // nist->FindOrBuildMaterial("G4_Pu");
   // nist->FindOrBuildMaterial("G4_H");
   // nist->FindOrBuildMaterial("G4_Al");
