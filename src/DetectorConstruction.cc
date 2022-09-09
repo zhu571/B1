@@ -376,7 +376,7 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
 
     // visualization attributes ------------------------------------------------
     //可视化界面几何体颜色设置（可有可无）
-  /*  
+  /* 
     G4VisAttributes* visAttributes = new G4VisAttributes(G4Colour(1.0,1.0,1.0));
     //visAttributes->SetVisibility(false);//不显示边框s
     logicWorld->SetVisAttributes(visAttributes);
@@ -421,8 +421,8 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
       }
       
     }
-    */
-    
+  
+   */
 //    logicDSSD->SetVisAttributes(visAttributes);
 //    fVisAttributes.push_back(visAttributes);
 

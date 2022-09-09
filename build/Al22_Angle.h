@@ -1,11 +1,12 @@
 //////////////////////////////////////////////////////////
 // This class has been automatically generated on
-// Thu Sep  8 10:06:56 2022 by ROOT version 6.26/06
-// from TChain t/
+// Thu Sep  8 21:05:56 2022 by ROOT version 6.26/06
+// from TTree tree/dssd
+// found on file: Al22_SE01.root
 //////////////////////////////////////////////////////////
 
-#ifndef Al22_SE_h
-#define Al22_SE_h
+#ifndef Al22_Angle_h
+#define Al22_Angle_h
 
 #include <TROOT.h>
 #include <TChain.h>
@@ -13,7 +14,7 @@
 
 // Header file for the classes stored in the TTree if any.
 
-class Al22_SE {
+class Al22_Angle {
 public :
    TTree          *fChain;   //!pointer to the analyzed TTree or TChain
    Int_t           fCurrent; //!current Tree number in a TChain
@@ -21,33 +22,19 @@ public :
 // Fixed size dimensions of array or collections stored in the TTree if any.
 
    // Declaration of leaf types
-   Int_t           EventID;
-   Char_t          PName[7];
-   Double_t        EDep;
-   Char_t          VolNamePre[1000];
-   Char_t          VolNamePost[1000];
-   Double_t        xPre;
-   Double_t        yPre;
-   Double_t        zPre;
-   Double_t        xPost;
-   Double_t        yPost;
-   Double_t        zPost;
+   Int_t           EventAID;
+   Int_t           dssdxid;
+   Int_t           dssdyid;
+   Double_t        dssdzpos;
 
    // List of branches
-   TBranch        *b_EventID;   //!
-   TBranch        *b_PName;   //!
-   TBranch        *b_EDep;   //!
-   TBranch        *b_VolNamePre;   //!
-   TBranch        *b_VolNamePost;   //!
-   TBranch        *b_xPre;   //!
-   TBranch        *b_yPre;   //!
-   TBranch        *b_zPre;   //!
-   TBranch        *b_xPost;   //!
-   TBranch        *b_yPost;   //!
-   TBranch        *b_zPost;   //!
+   TBranch        *b_EventAID;   //!
+   TBranch        *b_dssdxid;   //!
+   TBranch        *b_dssdyid;   //!
+   TBranch        *b_dssdzpos;   //!
 
-   Al22_SE(TTree *tree=0);
-   virtual ~Al22_SE();
+   Al22_Angle(TTree *tree=0);
+   virtual ~Al22_Angle();
    virtual Int_t    Cut(Long64_t entry);
    virtual Int_t    GetEntry(Long64_t entry);
    virtual Long64_t LoadTree(Long64_t entry);
@@ -59,49 +46,35 @@ public :
 
 #endif
 
-#ifdef Al22_SE_cxx
-Al22_SE::Al22_SE(TTree *tree) : fChain(0) 
+#ifdef Al22_Angle_cxx
+Al22_Angle::Al22_Angle(TTree *tree) : fChain(0) 
 {
 // if parameter tree is not specified (or zero), connect the file
 // used to generate this class and read the Tree.
    if (tree == 0) {
-
-#ifdef SINGLE_TREE
-      // The following code should be used if you want this class to access
-      // a single tree instead of a chain
-      TFile *f = (TFile*)gROOT->GetListOfFiles()->FindObject("Memory Directory");
+      TFile *f = (TFile*)gROOT->GetListOfFiles()->FindObject("Al22_SE01.root");
       if (!f || !f->IsOpen()) {
-         f = new TFile("Memory Directory");
+         f = new TFile("Al22_SE01.root");
       }
-      f->GetObject("t",tree);
-
-#else // SINGLE_TREE
-
-      // The following code should be used if you want this class to access a chain
-      // of trees.
-      TChain * chain = new TChain("t","");
-      chain->Add("outputdata_t0.root/t");
-      chain->Add("outputdata_t1.root/t");
-      tree = chain;
-#endif // SINGLE_TREE
+      f->GetObject("tree",tree);
 
    }
    Init(tree);
 }
 
-Al22_SE::~Al22_SE()
+Al22_Angle::~Al22_Angle()
 {
    if (!fChain) return;
    delete fChain->GetCurrentFile();
 }
 
-Int_t Al22_SE::GetEntry(Long64_t entry)
+Int_t Al22_Angle::GetEntry(Long64_t entry)
 {
 // Read contents of entry.
    if (!fChain) return 0;
    return fChain->GetEntry(entry);
 }
-Long64_t Al22_SE::LoadTree(Long64_t entry)
+Long64_t Al22_Angle::LoadTree(Long64_t entry)
 {
 // Set the environment to read one entry
    if (!fChain) return -5;
@@ -114,7 +87,7 @@ Long64_t Al22_SE::LoadTree(Long64_t entry)
    return centry;
 }
 
-void Al22_SE::Init(TTree *tree)
+void Al22_Angle::Init(TTree *tree)
 {
    // The Init() function is called when the selector needs to initialize
    // a new tree or chain. Typically here the branch addresses and branch
@@ -130,21 +103,14 @@ void Al22_SE::Init(TTree *tree)
    fCurrent = -1;
    fChain->SetMakeClass(1);
 
-   fChain->SetBranchAddress("EventID", &EventID, &b_EventID);
-   fChain->SetBranchAddress("PName", PName, &b_PName);
-   fChain->SetBranchAddress("EDep", &EDep, &b_EDep);
-   fChain->SetBranchAddress("VolNamePre", VolNamePre, &b_VolNamePre);
-   fChain->SetBranchAddress("VolNamePost", VolNamePost, &b_VolNamePost);
-   fChain->SetBranchAddress("xPre", &xPre, &b_xPre);
-   fChain->SetBranchAddress("yPre", &yPre, &b_yPre);
-   fChain->SetBranchAddress("zPre", &zPre, &b_zPre);
-   fChain->SetBranchAddress("xPost", &xPost, &b_xPost);
-   fChain->SetBranchAddress("yPost", &yPost, &b_yPost);
-   fChain->SetBranchAddress("zPost", &zPost, &b_zPost);
+   fChain->SetBranchAddress("EventAID", &EventAID, &b_EventAID);
+   fChain->SetBranchAddress("dssdxid", &dssdxid, &b_dssdxid);
+   fChain->SetBranchAddress("dssdyid", &dssdyid, &b_dssdyid);
+   fChain->SetBranchAddress("dssdzpos", &dssdzpos, &b_dssdzpos);
    Notify();
 }
 
-Bool_t Al22_SE::Notify()
+Bool_t Al22_Angle::Notify()
 {
    // The Notify() function is called when a new file is opened. This
    // can be either for a new TTree in a TChain or when when a new TTree
@@ -155,18 +121,18 @@ Bool_t Al22_SE::Notify()
    return kTRUE;
 }
 
-void Al22_SE::Show(Long64_t entry)
+void Al22_Angle::Show(Long64_t entry)
 {
 // Print contents of entry.
 // If entry is not specified, print current entry
    if (!fChain) return;
    fChain->Show(entry);
 }
-Int_t Al22_SE::Cut(Long64_t entry)
+Int_t Al22_Angle::Cut(Long64_t entry)
 {
 // This function may be called from Loop.
 // returns  1 if entry is accepted.
 // returns -1 otherwise.
    return 1;
 }
-#endif // #ifdef Al22_SE_cxx
+#endif // #ifdef Al22_Angle_cxx
