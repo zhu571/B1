@@ -1,12 +1,12 @@
 //////////////////////////////////////////////////////////
 // This class has been automatically generated on
-// Thu Sep  8 22:54:39 2022 by ROOT version 6.26/06
+// Fri Sep  9 11:20:51 2022 by ROOT version 6.26/06
 // from TTree tree/dssd
-// found on file: Angle.root
+// found on file: Al22_SE02.root
 //////////////////////////////////////////////////////////
 
-#ifndef anglehist_h
-#define anglehist_h
+#ifndef Anglehist_h
+#define Anglehist_h
 
 #include <TROOT.h>
 #include <TChain.h>
@@ -14,7 +14,7 @@
 
 // Header file for the classes stored in the TTree if any.
 
-class anglehist {
+class Anglehist {
 public :
    TTree          *fChain;   //!pointer to the analyzed TTree or TChain
    Int_t           fCurrent; //!current Tree number in a TChain
@@ -23,18 +23,20 @@ public :
 
    // Declaration of leaf types
    Int_t           ID;
-   Int_t           xsidid;
-   Int_t           ysidid;
+   Int_t           dssdxid;
+   Int_t           dssdyid;
+   Double_t        dssdzpos;
    Int_t           pid;
 
    // List of branches
    TBranch        *b_ID;   //!
-   TBranch        *b_xsidid;   //!
-   TBranch        *b_ysidid;   //!
+   TBranch        *b_dssdxid;   //!
+   TBranch        *b_dssdyid;   //!
+   TBranch        *b_dssdzpos;   //!
    TBranch        *b_pid;   //!
 
-   anglehist(TTree *tree=0);
-   virtual ~anglehist();
+   Anglehist(TTree *tree=0);
+   virtual ~Anglehist();
    virtual Int_t    Cut(Long64_t entry);
    virtual Int_t    GetEntry(Long64_t entry);
    virtual Long64_t LoadTree(Long64_t entry);
@@ -46,15 +48,15 @@ public :
 
 #endif
 
-#ifdef anglehist_cxx
-anglehist::anglehist(TTree *tree) : fChain(0) 
+#ifdef Anglehist_cxx
+Anglehist::Anglehist(TTree *tree) : fChain(0) 
 {
 // if parameter tree is not specified (or zero), connect the file
 // used to generate this class and read the Tree.
    if (tree == 0) {
-      TFile *f = (TFile*)gROOT->GetListOfFiles()->FindObject("Angle.root");
+      TFile *f = (TFile*)gROOT->GetListOfFiles()->FindObject("Al22_SE02.root");
       if (!f || !f->IsOpen()) {
-         f = new TFile("Angle.root");
+         f = new TFile("Al22_SE02.root");
       }
       f->GetObject("tree",tree);
 
@@ -62,19 +64,19 @@ anglehist::anglehist(TTree *tree) : fChain(0)
    Init(tree);
 }
 
-anglehist::~anglehist()
+Anglehist::~Anglehist()
 {
    if (!fChain) return;
    delete fChain->GetCurrentFile();
 }
 
-Int_t anglehist::GetEntry(Long64_t entry)
+Int_t Anglehist::GetEntry(Long64_t entry)
 {
 // Read contents of entry.
    if (!fChain) return 0;
    return fChain->GetEntry(entry);
 }
-Long64_t anglehist::LoadTree(Long64_t entry)
+Long64_t Anglehist::LoadTree(Long64_t entry)
 {
 // Set the environment to read one entry
    if (!fChain) return -5;
@@ -87,7 +89,7 @@ Long64_t anglehist::LoadTree(Long64_t entry)
    return centry;
 }
 
-void anglehist::Init(TTree *tree)
+void Anglehist::Init(TTree *tree)
 {
    // The Init() function is called when the selector needs to initialize
    // a new tree or chain. Typically here the branch addresses and branch
@@ -104,13 +106,14 @@ void anglehist::Init(TTree *tree)
    fChain->SetMakeClass(1);
 
    fChain->SetBranchAddress("ID", &ID, &b_ID);
-   fChain->SetBranchAddress("xsidid", &xsidid, &b_xsidid);
-   fChain->SetBranchAddress("ysidid", &ysidid, &b_ysidid);
+   fChain->SetBranchAddress("dssdxid", &dssdxid, &b_dssdxid);
+   fChain->SetBranchAddress("dssdyid", &dssdyid, &b_dssdyid);
+   fChain->SetBranchAddress("dssdzpos", &dssdzpos, &b_dssdzpos);
    fChain->SetBranchAddress("pid", &pid, &b_pid);
    Notify();
 }
 
-Bool_t anglehist::Notify()
+Bool_t Anglehist::Notify()
 {
    // The Notify() function is called when a new file is opened. This
    // can be either for a new TTree in a TChain or when when a new TTree
@@ -121,18 +124,18 @@ Bool_t anglehist::Notify()
    return kTRUE;
 }
 
-void anglehist::Show(Long64_t entry)
+void Anglehist::Show(Long64_t entry)
 {
 // Print contents of entry.
 // If entry is not specified, print current entry
    if (!fChain) return;
    fChain->Show(entry);
 }
-Int_t anglehist::Cut(Long64_t entry)
+Int_t Anglehist::Cut(Long64_t entry)
 {
 // This function may be called from Loop.
 // returns  1 if entry is accepted.
 // returns -1 otherwise.
    return 1;
 }
-#endif // #ifdef anglehist_cxx
+#endif // #ifdef Anglehist_cxx

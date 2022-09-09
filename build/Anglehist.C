@@ -1,14 +1,14 @@
-#define anglehist_cxx
-#include "anglehist.h"
+#define Anglehist_cxx
+#include "Anglehist.h"
 #include <TH2.h>
 #include <TStyle.h>
 #include <TCanvas.h>
 
-void anglehist::Loop()
+void Anglehist::Loop()
 {
 //   In a ROOT session, you can do:
-//      root> .L anglehist.C
-//      root> anglehist t
+//      root> .L Anglehist.C
+//      root> Anglehist t
 //      root> t.GetEntry(12); // Fill t data members with entry number 12
 //      root> t.Show();       // Show values of entry 12
 //      root> t.Show(16);     // Read and show values of entry 16

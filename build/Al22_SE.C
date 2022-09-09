@@ -43,6 +43,7 @@ void Al22_SE::Loop()
    Int_t dssdyidpre = 0;
    Double_t dssdzpos =0;
    Int_t pid = 0;
+   Int_t Pid = 1;
 //   Char_t VolNameAPre[10];
 //   Char_t VolNameAPost[1000];
 
@@ -130,9 +131,14 @@ void Al22_SE::Loop()
          pid = 1;
       }
 
+      if (pid==2||Pid==2)
+      {
+         tree->Fill();
 
-      tree->Fill();
-
+      }
+  
+      
+      Pid =pid;
 
       ID=EventID;
    }
