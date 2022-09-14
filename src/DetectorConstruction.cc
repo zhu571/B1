@@ -243,8 +243,8 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
   G4double dssd1Z = 142.0*um;
   G4double dssd2Z = 40.0*um;
   G4double dssd3Z = 304.0*um;
-  G4double dssddx = 0.3125*cm;
-  G4double dssddy = 0.3125*cm;
+  G4double dssddx = 3.125*mm;
+  G4double dssddy = 3.125*mm;
 
   G4Box* solidWord = 
     new G4Box("World",
@@ -312,7 +312,7 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
                       
     physDSSD2[num1] = 
     new G4PVPlacement(0,
-                      G4ThreeVector((2.484375-0.3125*j)*cm,(2.484375-0.3125*i)*cm,0),
+                      G4ThreeVector((24.84375-3.125*j)*mm,(24.84375-3.125*i)*mm,0),
                       logicDSSD2[num1],
                       dssd2name,
                       logicWorld,
@@ -335,7 +335,7 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
                       
     physDSSD1[num2] = 
     new G4PVPlacement(0,
-                      G4ThreeVector((2.484375-0.3125*m)*cm,(2.484375-0.3125*l)*cm,19*mm),
+                      G4ThreeVector((24.84375-3.125*m)*mm,(2.484375-0.3125*l)*mm,19*mm),
                       logicDSSD1[num2],
                       dssd1name,
                       logicWorld,
@@ -358,7 +358,7 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
                       
     physDSSD3[num3] = 
     new G4PVPlacement(0,
-                      G4ThreeVector((2.484375-0.3125*o)*cm,(2.484375-0.3125*u)*cm,-19*mm),
+                      G4ThreeVector((24.84375-3.125*o)*mm,(24.84375-3.125*u)*mm,-19*mm),
                       logicDSSD3[num3],
                       dssd3name,
                       logicWorld,
