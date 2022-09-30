@@ -94,7 +94,7 @@ int main(int argc,char** argv)
     mtrunManager = new G4RunManager;
   #else
     mtrunManager = new G4MTRunManager;
-    mtrunManager->SetNumberOfThreads(2);
+    mtrunManager->SetNumberOfThreads(1);
   #endif
     // mtrunManager->SetUserInitialization(new wuWorkerInitialization);
 
