@@ -268,16 +268,17 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
   char dssd1name[200];
   char dssd2name[200];
   char dssd3name[200];
-
+/*
   G4Box* solidDSSD1 =    
-    new G4Box("DSSD3",                    //its name
+    new G4Box("DSSD1",                    //its name
   	      0.5*dssddx, 0.5*dssddy, 0.5*dssd1Z); //its size
 
-
+*/
+  /*
   G4Box* solidDSSD2 =    
-    new G4Box("DSSD3",                    //its name
+    new G4Box("DSSD2",                    //its name
   	      0.5*dssddx, 0.5*dssddy, 0.5*dssd2Z); //its size
-
+*/
 
   G4Box* solidDSSD3 =    
     new G4Box("DSSD3",                    //its name
@@ -298,6 +299,8 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
 		      0,                       //copy number
 		      checkOverlaps);          //overlaps checking
 */
+
+    /*
   for (size_t i = 0; i < 16; i++)
 {
   for (size_t j = 0; j < 16; j++)
@@ -343,7 +346,7 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
                       0,
                       checkOverlaps);
   }
-}
+}*/
   for (size_t u = 0; u < 16; u++)
 {
   for (size_t o = 0; o < 16; o++)
@@ -358,7 +361,7 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
                       
     physDSSD3[num3] = 
     new G4PVPlacement(0,
-                      G4ThreeVector((24.84375-3.125*o)*mm,(24.84375-3.125*u)*mm,-19*mm),
+                      G4ThreeVector((24.84375-3.125*o)*mm,(24.84375-3.125*u)*mm,152*um),
                       logicDSSD3[num3],
                       dssd3name,
                       logicWorld,
