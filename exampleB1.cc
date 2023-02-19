@@ -56,6 +56,8 @@
 #include "QGSP_INCLXX_HP.hh"// G4EmStandardPhysics G4EmExtraPhysics G4DecayPhysics G4HadronElasticPhysicsHP G4HadronPhysicsINCLXX G4StoppingPhysics G4IonINCLXXPhysics
 #include "Shielding.hh"// 这个比较复杂,分好几种情况 -_-
 
+#include "TROOT.h"
+
 #include "G4ParticleHPManager.hh"
 
 // 关于图形界面与交互接口
@@ -118,7 +120,14 @@ int main(int argc,char** argv)
   
   // Print   Data source of this Partile HP calculation
   // G4ParticleHPManager::GetInstance()->DumpDataSource();
+<<<<<<< HEAD
   ROOT::EnableThreadSafety(); // 这一行非常重要，少了程序就崩溃
+=======
+
+
+  ROOT::EnableThreadSafety(); // 这一行非常重要，少了程序就崩溃
+
+>>>>>>> a5ec991fd00c2f592556d739c4ce09eb32c03836
   
 
   // Initialize visualization

@@ -56,7 +56,10 @@ PrimaryGeneratorAction::PrimaryGeneratorAction()
 {
   particleGun = new G4ParticleGun(1);///*G4int n_particle*/
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> a5ec991fd00c2f592556d739c4ce09eb32c03836
     // 这里省略    
 
   // 打开文件，读取 TH1/TH2   
@@ -69,8 +72,11 @@ PrimaryGeneratorAction::PrimaryGeneratorAction()
   h2 = (TH2I*)filer->Get("himpl304py");
   h3 = (TH2I*)filer->Get("himpl304pz");
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> a5ec991fd00c2f592556d739c4ce09eb32c03836
 }
 
 PrimaryGeneratorAction::~PrimaryGeneratorAction()
@@ -81,7 +87,11 @@ PrimaryGeneratorAction::~PrimaryGeneratorAction()
       particleGun =NULL;
     }  
 
+<<<<<<< HEAD
       filer->Close();
+=======
+      filer->Close();    
+>>>>>>> a5ec991fd00c2f592556d739c4ce09eb32c03836
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
@@ -106,7 +116,11 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
   // particleGun->SetParticleCharge(IonQ);
 
   //Geant4已经定义的粒子
+<<<<<<< HEAD
   pp = particleTable->FindParticle("e-");
+=======
+  pp = particleTable->FindParticle("alpha");
+>>>>>>> a5ec991fd00c2f592556d739c4ce09eb32c03836
 
   // -------------------------
   
@@ -127,13 +141,13 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
 /////////////////Al22_SE///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   /*
 
-  //G4double Ed =  4.464*MeV;//4464
-  //G4double Ep1 = 2.354*MeV;
-  //G4double Ep2 = 2.11*MeV;
+  G4double Ed =  4.464*MeV;//4464
+  G4double Ep1 = 2.354*MeV;
+  G4double Ep2 = 2.11*MeV;
 
-  G4double Ed =  6.085*MeV;//4464
-  G4double Ep1 = 2.747*MeV;
-  G4double Ep2 = 3.338*MeV;
+  //G4double Ed =  6.085*MeV;//6085
+  //G4double Ep1 = 2.747*MeV;
+  //G4double Ep2 = 3.338*MeV;
 
 
   G4double E1 = 0;
@@ -315,13 +329,18 @@ particleGun->GeneratePrimaryVertex(anEvent);
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////Al22_2He//////////////////////////////////////////////////////////////////////////////////////
+<<<<<<< HEAD
 
 /*
+=======
+/*
+
+>>>>>>> a5ec991fd00c2f592556d739c4ce09eb32c03836
   
   G4double pi = 3.1415926;
   G4double U1=0;
   G4double U2=0;
-  G4double Ed1 = 6.085*MeV;
+  G4double Ed1 = 4.464*MeV;
   G4double Ed2 = 0;
   G4double E2p = 0;
   G4double E2V = 9.7844874e6;
@@ -614,7 +633,7 @@ do{
   particleGun->GeneratePrimaryVertex(anEvent);
 
 
-
+*/
 
 */
 
@@ -625,12 +644,33 @@ do{
 
 ////////////////////////////////////////////////////////////////////////////////////////////beta///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+<<<<<<< HEAD
 G4double EBeta = 0.45*MeV;
 G4double x = depx;
 G4double y = depy;
 G4double z = depz;
 particleGun->SetParticleEnergy(EBeta);
 particleGun->SetParticlePosition(G4ThreeVector(x, y, z));
+=======
+G4double EBeta = 4.03*MeV;
+G4double x = depx*um;
+G4double y = depy*um;
+G4double z = depz*um;
+particleGun->SetParticleEnergy(EBeta);
+particleGun->SetParticlePosition(G4ThreeVector(x, y, z));
+
+G4double theta= acos((G4UniformRand()-0.5)*2);
+G4double phi = G4UniformRand()*2.0*pi;
+G4double cosPX = sin(theta)*cos(phi);
+G4double cosPY = sin(theta)*sin(phi);
+G4double cosPZ = cos(theta);
+G4ThreeVector directPri(cosPX, cosPY, cosPZ);    
+particleGun->SetParticleMomentumDirection(directPri);  
+
+particleGun->GeneratePrimaryVertex(anEvent);
+
+  
+>>>>>>> a5ec991fd00c2f592556d739c4ce09eb32c03836
 
 G4double theta= acos((G4UniformRand()-0.5)*2);
 G4double phi = G4UniformRand()*2.0*pi;

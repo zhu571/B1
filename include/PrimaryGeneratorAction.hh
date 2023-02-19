@@ -97,6 +97,11 @@ class PrimaryGeneratorAction : public G4VUserPrimaryGeneratorAction
     G4Box* fEnvelopeBox = nullptr;
     */
 
+  TFile *filer;
+  TH1I *h1;
+  TH2I *h2;
+  TH2I *h3;
+
 };
 
 }
