@@ -32,6 +32,7 @@
 
 #include "DetectorConstruction.hh"
 #include "ActionInitialization.hh"
+#include "TROOT.h"
 
 #include "FTF_BIC.hh"// G4EmStandardPhysics G4EmExtraPhysics G4DecayPhysics G4HadronElasticPhysic G4HadronPhysicsFTF_BIC G4StoppingPhysics G4IonPhysics G4NeutronTrackingCut
 #include "FTFP_BERT_ATL.hh"// G4EmStandardPhysics G4EmExtraPhysics G4DecayPhysics G4HadronElasticPhysic G4HadronPhysicsFTFP_BERT_ATL G4StoppingPhysics G4IonPhysics G4NeutronTrackingCut 
@@ -117,7 +118,7 @@ int main(int argc,char** argv)
   
   // Print   Data source of this Partile HP calculation
   // G4ParticleHPManager::GetInstance()->DumpDataSource();
-
+  ROOT::EnableThreadSafety(); // 这一行非常重要，少了程序就崩溃
   
 
   // Initialize visualization

@@ -40,6 +40,10 @@
 #include "G4SystemOfUnits.hh"
 #include "Randomize.hh"
 
+#include "TFile.h"
+#include "TH1.h"
+#include "TH2.h"
+
 #include "G4PhysicalConstants.hh"
 
 namespace B1
@@ -51,6 +55,22 @@ PrimaryGeneratorAction::PrimaryGeneratorAction()
   : G4VUserPrimaryGeneratorAction(),particleGun(NULL)
 {
   particleGun = new G4ParticleGun(1);///*G4int n_particle*/
+
+
+    // 这里省略    
+
+  // 打开文件，读取 TH1/TH2   
+  filer = new TFile("Al22_1017_0367_0538_p300_c250_t10T_pg.root","READ");
+  if(!filer->IsOpen())
+    {
+      std::cout<<"Can't open root file"<<std::endl;
+    }
+  h1 = (TH1I*)filer->Get("himpl304px");
+  h2 = (TH2I*)filer->Get("himpl304py");
+  h3 = (TH2I*)filer->Get("himpl304pz");
+
+
+
 }
 
 PrimaryGeneratorAction::~PrimaryGeneratorAction()
@@ -60,6 +80,8 @@ PrimaryGeneratorAction::~PrimaryGeneratorAction()
       delete particleGun;
       particleGun =NULL;
     }  
+
+      filer->Close();
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
@@ -68,7 +90,10 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
 {
   G4ParticleTable* particleTable = G4ParticleTable::GetParticleTable();
   G4ParticleDefinition* pp = 0;
-
+  double depx = h1->GetRandom();
+  double depy = h2->GetRandom();
+  double depz = h3->GetRandom();
+  G4cout<<"depx="<<depx<<" "<<"depy="<<depy<<" "<<"depz="<<depz<<G4endl;  
   // -------------------------
   
   //自定义带电粒子
@@ -81,7 +106,7 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
   // particleGun->SetParticleCharge(IonQ);
 
   //Geant4已经定义的粒子
-  pp = particleTable->FindParticle("proton");
+  pp = particleTable->FindParticle("e-");
 
   // -------------------------
   
@@ -291,7 +316,7 @@ particleGun->GeneratePrimaryVertex(anEvent);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////Al22_2He//////////////////////////////////////////////////////////////////////////////////////
 
-
+/*
   
   G4double pi = 3.1415926;
   G4double U1=0;
@@ -591,14 +616,31 @@ do{
 
 
 
-
+*/
 
   
 
 ////////////////////////////////////////////////////////////////////////////////////////////Al22_2He//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
+////////////////////////////////////////////////////////////////////////////////////////////beta///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+G4double EBeta = 0.45*MeV;
+G4double x = depx;
+G4double y = depy;
+G4double z = depz;
+particleGun->SetParticleEnergy(EBeta);
+particleGun->SetParticlePosition(G4ThreeVector(x, y, z));
+
+G4double theta= acos((G4UniformRand()-0.5)*2);
+G4double phi = G4UniformRand()*2.0*pi;
+G4double cosPX = sin(theta)*cos(phi);
+G4double cosPY = sin(theta)*sin(phi);
+G4double cosPZ = cos(theta);
+G4ThreeVector directPri(cosPX, cosPY, cosPZ);    
+particleGun->SetParticleMomentumDirection(directPri);  
+
+particleGun->GeneratePrimaryVertex(anEvent);
 
   
   //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

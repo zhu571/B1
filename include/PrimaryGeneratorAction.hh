@@ -41,6 +41,10 @@
 #include "G4ParticleDefinition.hh"
 #include "G4ParticleMomentum.hh"
 #include "G4ThreeVector.hh"
+
+#include "TFile.h"
+#include "TH1.h"
+#include "TH2.h"
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 class G4ParticleGun;
@@ -73,6 +77,13 @@ class PrimaryGeneratorAction : public G4VUserPrimaryGeneratorAction
   // user define
   private:
   G4ParticleGun* particleGun;//继承G4VPrimaryGenerator
+
+  TFile *filer;
+  TH1I *h1;
+  TH2I *h2;
+  TH2I *h3;
+
+
 /*
     // method from the base class
     void GeneratePrimaries(G4Event*) override;

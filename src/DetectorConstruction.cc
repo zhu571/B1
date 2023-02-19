@@ -241,7 +241,7 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
   /*G4double dssdX = 5.0*cm;
   G4double dssdY = 5.0*cm;*/
   G4double dssd1Z = 142.0*um;
-  G4double dssd2Z = 40.0*um;
+  G4double dssd2Z = 300.0*um;
   G4double dssd3Z = 304.0*um;
   G4double dssddx = 3.125*mm;
   G4double dssddy = 3.125*mm;
@@ -265,24 +265,24 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
                       0,
                       checkOverlaps);
 
-  char dssd1name[200];
+  //char dssd1name[200];
   char dssd2name[200];
-  char dssd3name[200];
-
+  //char dssd3name[200];
+/*
   G4Box* solidDSSD1 =    
     new G4Box("DSSD3",                    //its name
   	      0.5*dssddx, 0.5*dssddy, 0.5*dssd1Z); //its size
-
+*/
 
   G4Box* solidDSSD2 =    
     new G4Box("DSSD3",                    //its name
   	      0.5*dssddx, 0.5*dssddy, 0.5*dssd2Z); //its size
 
-
+/*
   G4Box* solidDSSD3 =    
     new G4Box("DSSD3",                    //its name
   	      0.5*dssddx, 0.5*dssddy, 0.5*dssd3Z); //its size
-
+*/
  /* logicDSSD =
     new G4LogicalVolume(solidDSSD,            //its solid
 			dssd_mat,             //its material
@@ -321,6 +321,7 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
                       checkOverlaps);
   }
 }
+/*
   for (size_t l = 0; l < 16; l++)
 {
   for (size_t m = 0; m < 16; m++)
@@ -368,7 +369,7 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
   }
   
 }
-
+*/
 
 
   //===============================
