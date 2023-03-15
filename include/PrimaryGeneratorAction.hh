@@ -91,9 +91,9 @@ class PrimaryGeneratorAction : public G4VUserPrimaryGeneratorAction
     */
 
   TFile *filer;
-  TH1I *h1;
-  TH2I *h2;
-  TH2I *h3;
+  TH1F *h1;
+  TH1F *h2;
+  TH1F *h3;
 
 };
 

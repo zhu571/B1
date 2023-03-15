@@ -60,9 +60,9 @@ PrimaryGeneratorAction::PrimaryGeneratorAction()
     {
       std::cout<<"Can't open root file"<<std::endl;
     }
-  h1 = (TH1I*)filer->Get("himpl304px");
-  h2 = (TH2I*)filer->Get("himpl304py");
-  h3 = (TH2I*)filer->Get("himpl304pz");
+  h1 = (TH1F*)filer->Get("himpl304px");
+  h2 = (TH1F*)filer->Get("himpl304py");
+  h3 = (TH1F*)filer->Get("himpl304pz");
 
 }
 
@@ -83,10 +83,7 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
 {
   G4ParticleTable* particleTable = G4ParticleTable::GetParticleTable();
   G4ParticleDefinition* pp = 0;
-  double depx = h1->GetRandom();
-  double depy = h2->GetRandom();
-  double depz = h3->GetRandom();
-  G4cout<<"depx="<<depx<<" "<<"depy="<<depy<<" "<<"depz="<<depz<<G4endl;  
+
   // -------------------------
   
   //自定义带电粒子
@@ -118,8 +115,8 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
 
 
 /////////////////Al22_SE///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-  /*
-
+  
+/*
   G4double Ed =  4.464*MeV;//4464
   G4double Ep1 = 2.354*MeV;
   G4double Ep2 = 2.11*MeV;
@@ -201,22 +198,6 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
   G4double cosPX3 = - cosPX1;
   G4double cosPY3 = - cosPY1; 
   G4double cosPZ3 = - cosPZ1; 
-  //particleGun->SetParticleMomentumDirection(directPri1);
-
-  //这个调用一次设置一次粒子，一次模拟要同时发射多个不同粒子就得多次调用它
- // particleGun->GeneratePrimaryVertex(anEvent);
-
- // particleGun->SetParticleEnergy(Ep2);
-
-  
-  // primary particle position
-  //G4double x2 = 0.;
-  //G4double y2 = 0.;
-  //G4double z2 = 0.;
-  //particleGun->SetParticlePosition(G4ThreeVector(x1, y1, z1));
-
-
-  // primary particle moving direction
   G4double theta2= acos((G4UniformRand()-0.5)*2);
   G4double phi2 = G4UniformRand()*2.0*pi;
    cosPX2 = sin(theta2)*cos(phi2);
@@ -278,7 +259,22 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
   //G4ThreeVector directPri2(cosPX2l,cosPY2l,cosPZ2l);
 
  // G4cout<<"totalenergy == "<<totalenergy<<G4endl;
+  //particleGun->SetParticleMomentumDirection(directPri1);
 
+  //这个调用一次设置一次粒子，一次模拟要同时发射多个不同粒子就得多次调用它
+ // particleGun->GeneratePrimaryVertex(anEvent);
+
+ // particleGun->SetParticleEnergy(Ep2);
+
+  
+  // primary particle position
+  //G4double x2 = 0.;
+  //G4double y2 = 0.;
+  //G4double z2 = 0.;
+  //particleGun->SetParticlePosition(G4ThreeVector(x1, y1, z1));
+
+
+  // primary particle moving direction
 
 }while(abs(totalenergy - Ed)/Ed>ratio || abs(px)/abspx>ratio || abs(py)/abspy>ratio || abs(pz)/abspz>ratio);
 
@@ -302,15 +298,15 @@ particleGun->GeneratePrimaryVertex(anEvent);
 
   //这个调用一次设置一次粒子，一次模拟要同时发射多个不同粒子就得多次调用它
   //particleGun->GeneratePrimaryVertex(anEvent);
-*/
 
+*/
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Al22_SE////////////////////////////////////////////////////////////////////////////////////////
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////Al22_2He//////////////////////////////////////////////////////////////////////////////////////
-/*
 
-  
+
+  /*
   G4double pi = 3.1415926;
   G4double U1=0;
   G4double U2=0;
@@ -454,30 +450,7 @@ do{
 
     Ed2 = G4RandGauss::shoot(mean_2He,sigma_2He);
   }while(Ed2<=0.000);
-  
-  //G4cout << "Ed2 = " << Ed2 << G4endl;
-
-
-  //G4double p1 = 0;
-
-
- // G4double p1x = 0;
- // G4double p1y = 0;
- // G4double p1z = 0;
-
- // G4double p2x = 0;
- // G4double p2y = 0;
- // G4double p2z = 0;
-
- // G4double p3x = 0;
- // G4double p3y = 0;
- // G4double p3z = 0;
-  
-
-
-
-
-
+ 
 /////两个质子的方向
 
    theta1= acos((G4UniformRand()-0.5)*2);
@@ -571,6 +544,29 @@ do{
   abspz = abs(v1lz * mp) + abs(v2lz * mp) + abs(v3z * m20Na);
 
 
+ 
+  //G4cout << "Ed2 = " << Ed2 << G4endl;
+
+
+  //G4double p1 = 0;
+
+
+ // G4double p1x = 0;
+ // G4double p1y = 0;
+ // G4double p1z = 0;
+
+ // G4double p2x = 0;
+ // G4double p2y = 0;
+ // G4double p2z = 0;
+
+ // G4double p3x = 0;
+ // G4double p3y = 0;
+ // G4double p3z = 0;
+  
+
+
+
+
 
 }while(abs(totalenergy-Ed1)/Ed1>ratio || abs(px)/abspx>ratio || abs(py)/abspy>ratio || abs(pz)/abspz>ratio);
 
@@ -607,22 +603,29 @@ do{
   particleGun->GeneratePrimaryVertex(anEvent);
 
 
-*/
 
 
 
-  
+
+  */
 
 ////////////////////////////////////////////////////////////////////////////////////////////Al22_2He//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-////////////////////////////////////////////////////////////////////////////////////////////beta///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////beta///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+double depx = h1->GetRandom();
+double depy = h2->GetRandom();
+double depz = h3->GetRandom();
+// G4cout<<"depx="<<depx<<" "<<"depy="<<depy<<" "<<"depz="<<depz<<G4endl;  
 
-G4double EBeta = 4.03*MeV;
-G4double x = depx*um;
-G4double y = depy*um;
+
+G4double E_mean = 4.03*MeV;
+G4double E_sigma = 0.05*MeV;
+G4double Ealpha = G4RandGauss::shoot(E_mean,E_sigma);
+G4double x = depx*mm;
+G4double y = depy*mm;
 G4double z = depz*um;
-particleGun->SetParticleEnergy(EBeta);
+particleGun->SetParticleEnergy(Ealpha);
 particleGun->SetParticlePosition(G4ThreeVector(x, y, z));
 
 G4double theta= acos((G4UniformRand()-0.5)*2);

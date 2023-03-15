@@ -115,7 +115,7 @@ void DetectorConstruction::DefineMaterials()
   
   //调用G4自身定义好的材料
   nist->FindOrBuildMaterial("G4_Galactic");//
-  //nist->FindOrBuildElement("G4_Si");
+  nist->FindOrBuildMaterial("G4_Si");
   //nist->FindOrBuildMaterial("G4_Ge");//
   // nist->FindOrBuildMaterial("G4_Pu");
   // nist->FindOrBuildMaterial("G4_H");
@@ -168,7 +168,7 @@ void DetectorConstruction::DefineMaterials()
   
   //elements material
   //G4double fractionmass;
-  G4Material* dssdmat = new G4Material("dssdmat",2.32*g/cm3,1);
+  G4Material* dssdmat = new G4Material("dssdmat",2.33*g/cm3,1);
   dssdmat->AddElement(Si, 1.00);
 
 
@@ -231,15 +231,15 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
 {
   //通过G4Material::GetMaterial()获取DefineMaterials()中定义的材料！
   G4Material* world_mat =  G4Material::GetMaterial("G4_Galactic");
-  G4Material* dssd_mat =  G4Material::GetMaterial("dssdmat");
+  G4Material* dssd_mat =  G4Material::GetMaterial("G4_Si");
 
   //     
   // World
   //
   G4double sizeXYZ = 1.0*m;
 
-  /*G4double dssdX = 5.0*cm;
-  G4double dssdY = 5.0*cm;*/
+  G4double dssdX = 5.0*cm;
+  G4double dssdY = 5.0*cm;
   G4double dssd1Z = 142.0*um;
   G4double dssd2Z = 40.0*um;
   G4double dssd3Z = 304.0*um;
@@ -267,40 +267,28 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
 
   char dssd1name[200];
   char dssd2name[200];
-  char dssd3name[200];
+  char dssd3xname[200];
+  char dssd3yname[200];
 /*
   G4Box* solidDSSD1 =    
     new G4Box("DSSD1",                    //its name
   	      0.5*dssddx, 0.5*dssddy, 0.5*dssd1Z); //its size
 
-*/
-  /*
+
+  
   G4Box* solidDSSD2 =    
     new G4Box("DSSD2",                    //its name
   	      0.5*dssddx, 0.5*dssddy, 0.5*dssd2Z); //its size
-*/
 
-  G4Box* solidDSSD3 =    
+*/
+  G4Box* solidDSSD3x =    
     new G4Box("DSSD3",                    //its name
-  	      0.5*dssddx, 0.5*dssddy, 0.5*dssd3Z); //its size
+  	      0.5*dssddx, 0.5*dssdY, 0.25*dssd3Z); //its size
 
- /* logicDSSD =
-    new G4LogicalVolume(solidDSSD,            //its solid
-			dssd_mat,             //its material
-			"DSSD");         //its name
-
-  physDSSD =
-    new G4PVPlacement(0,                       //no rotation set 0
-		      G4ThreeVector(), //at (0,0,0)
-		      logicDSSD,               //its logical volume
-		      "DSSD",              //its name
-		      logicWorld,              //its mother  volume
-		      false,                   //no boolean operation
-		      0,                       //copy number
-		      checkOverlaps);          //overlaps checking
-*/
-
-    /*
+  G4Box* solidDSSD3y =    
+    new G4Box("DSSD3",                    //its name
+  	      0.5*dssdX, 0.5*dssddy, 0.25*dssd3Z);
+ /*
   for (size_t i = 0; i < 16; i++)
 {
   for (size_t j = 0; j < 16; j++)
@@ -346,51 +334,111 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
                       0,
                       checkOverlaps);
   }
-}*/
-  for (size_t u = 0; u < 16; u++)
-{
-  for (size_t o = 0; o < 16; o++)
-  {
-    int num3 = 16*u+o;
-    sprintf(dssd3name,"dssd3|%d",num3);
+}
+*/
 
-    logicDSSD3[num3] =
-     new G4LogicalVolume(solidDSSD3,
-                         dssd_mat,
-                         dssd3name);
+//   for (size_t u = 0; u < 16; u++)
+// {
+//   for (size_t o = 0; o < 16; o++)
+//   {
+//     int num3 = 16*u+o;
+//     sprintf(dssd3name,"dssd3|%d",num3);
+
+//     logicDSSD3[num3] =
+//      new G4LogicalVolume(solidDSSD3,
+//                          dssd_mat,
+//                          dssd3name);
                       
-    physDSSD3[num3] = 
-    new G4PVPlacement(0,
-                      G4ThreeVector((24.84375-3.125*o)*mm,(24.84375-3.125*u)*mm,152*um),
-                      logicDSSD3[num3],
-                      dssd3name,
-                      logicWorld,
-                      false,
-                      0,
-                      checkOverlaps);
-  }
+//     physDSSD3[num3] = 
+//     new G4PVPlacement(0,
+//                       G4ThreeVector((24.84375-3.125*o)*mm,(24.84375-3.125*u)*mm,152*um),
+//                       logicDSSD3[num3],
+//                       dssd3name,
+//                       logicWorld,
+//                       false,
+//                       0,
+//                       checkOverlaps);
+//   }
   
+// }
+
+
+for (int i = 0; i < 16; i++) {
+  int num3x = i;
+  sprintf(dssd3xname,"dssd3x|%d",num3x);
+
+  logicDSSD3x[num3x] = 
+    new G4LogicalVolume(solidDSSD3x,
+                     dssd_mat,
+                     dssd3xname);
+
+  physDSSD3[num3x] = 
+  new G4PVPlacement(0,
+                    G4ThreeVector((24.84375-3.125*i)*mm,0*mm,76*um),
+                    logicDSSD3x[num3x],
+                    dssd3xname,
+                    logicWorld,
+                    false,
+                    0,
+                    checkOverlaps);
 }
 
+for (int j = 0; j < 16; j++) {
+  int num3y = j;
+  sprintf(dssd3yname,"dssd3y|%d",num3y);
 
+  logicDSSD3y[num3y] = 
+    new G4LogicalVolume(solidDSSD3y,
+                     dssd_mat,
+                     dssd3yname);
 
+  physDSSD3[num3y] = 
+  new G4PVPlacement(0,
+                    G4ThreeVector(0*mm,(24.84375-3.125*j)*mm,228*um),
+                    logicDSSD3y[num3y],
+                    dssd3yname,
+                    logicWorld,
+                    false,
+                    0,
+                    checkOverlaps);
+}
+
+ /* logicDSSD =
+    new G4LogicalVolume(solidDSSD,            //its solid
+      dssd_mat,             //its material
+      "DSSD");         //its name
+
+  physDSSD =
+    new G4PVPlacement(0,                       //no rotation set 0
+          G4ThreeVector(), //at (0,0,0)
+          logicDSSD,               //its logical volume
+          "DSSD",              //its name
+          logicWorld,              //its mother  volume
+          false,                   //no boolean operation
+          0,                       //copy number
+          checkOverlaps);          //overlaps checking
+*/
+
+   
   //===============================
 
 
     // visualization attributes ------------------------------------------------
     //可视化界面几何体颜色设置（可有可无）
-  /* 
-    G4VisAttributes* visAttributes = new G4VisAttributes(G4Colour(1.0,1.0,1.0));
-    //visAttributes->SetVisibility(false);//不显示边框s
-    logicWorld->SetVisAttributes(visAttributes);
-    fVisAttributes.push_back(visAttributes);
+  
+    // G4VisAttributes* visAttributes = new G4VisAttributes(G4Colour(1.0,1.0,1.0));
+    // //visAttributes->SetVisibility(false);//不显示边框s
+    // logicWorld->SetVisAttributes(visAttributes);
+    // fVisAttributes.push_back(visAttributes);
     
-    visAttributes = new G4VisAttributes(G4Colour(1.0,1.0,0.0)); 
+    // visAttributes = new G4VisAttributes(G4Colour(1.0,1.0,0.0)); 
+
+    /*
     for (size_t i = 0; i < 16; i++)
     {
       for (size_t j = 0; j < 16; j++)
       {
-        int numc = 10*i+j;
+        int numc = 16*i+j;
 
         logicDSSD1[numc]->SetVisAttributes(visAttributes);
         fVisAttributes.push_back(visAttributes);
@@ -403,7 +451,7 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
     {
       for (size_t j = 0; j < 16; j++)
       {
-        int numc = 10*i+j;
+        int numc = 16*i+j;
 
         logicDSSD2[numc]->SetVisAttributes(visAttributes);
         fVisAttributes.push_back(visAttributes);
@@ -411,23 +459,23 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
       }
       
     }
+*/
+    // for (size_t i = 0; i < 16; i++)
+    // {
+    //   for (size_t j = 0; j < 16; j++)
+    //   {
+    //     int numc = 16*i+j;
 
-    for (size_t i = 0; i < 16; i++)
-    {
-      for (size_t j = 0; j < 16; j++)
-      {
-        int numc = 10*i+j;
+    //     logicDSSD3[numc]->SetVisAttributes(visAttributes);
+    //     fVisAttributes.push_back(visAttributes);
 
-        logicDSSD3[numc]->SetVisAttributes(visAttributes);
-        fVisAttributes.push_back(visAttributes);
-
-      }
+    //   }
       
-    }
+    // }
   
-   */
-//    logicDSSD->SetVisAttributes(visAttributes);
-//    fVisAttributes.push_back(visAttributes);
+   
+    //logicDSSD->SetVisAttributes(visAttributes);
+    //fVisAttributes.push_back(visAttributes);
 
     // G4Colour  white   (1.0, 1.0, 1.0) ;
     // G4Colour  grey    (0.5, 0.5, 0.5) ;

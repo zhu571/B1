@@ -77,9 +77,9 @@ using namespace B1;
 
 int main(int argc,char** argv)
 {
-  // G4Random::setTheEngine(new CLHEP::RanecuEngine);
-  // G4int seconds =  time(NULL);
-  // G4Random::setTheSeed(seconds);
+  G4Random::setTheEngine(new CLHEP::RanecuEngine);
+  G4int seconds =  time(NULL);
+  G4Random::setTheSeed(seconds);
 
   // Detect interactive mode (if no arguments) and define UI session
   //

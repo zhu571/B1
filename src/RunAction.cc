@@ -78,7 +78,7 @@ void RunAction::BeginOfRunAction(const G4Run*)
   // analysisManager = G4XmlAnalysisManager::Instance();
 
   analysisManager->SetVerboseLevel(1);
-  analysisManager->CreateNtuple("t", "Geant4 data !");
+  analysisManager->CreateNtuple("tree", "Geant4 data !");
 
   analysisManager->CreateNtupleIColumn("EventID");
   //analysisManager->CreateNtupleIColumn("ParentID");
