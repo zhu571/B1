@@ -1,12 +1,6 @@
 
-
-          ################################
-          !!! G4Backtrace is activated !!!
-          ################################
-
-
 **************************************************************
- Geant4 version Name: geant4-11-00-patch-01 [MT]   (8-March-2022)
+ Geant4 version Name: geant4-11-01-patch-01 [MT]   (10-February-2023)
   << in Multi-threaded mode >> 
                        Copyright : Geant4 Collaboration
                       References : NIM A 506 (2003), 250-303
@@ -15,10 +9,10 @@
                              WWW : http://geant4.org/
 **************************************************************
 
-<<< Geant4 Physics List simulation engine: QGSP_BERT
+<<< Geant4 Physics List simulation engine: QGSP_BIC
 
 
-***** Table : Nb of materials = 3 *****
+***** Table : Nb of materials = 2 *****
 
  Material: G4_Galactic    density:  0.000 mg/cm3  RadL: 204310098.490 pc   Nucl.Int.Length: 113427284.261 pc 
                        Imean:  21.800 eV   temperature:   2.73 K  pressure:   0.00 atm
@@ -26,18 +20,6 @@
    --->  Element: H (H)   Z =  1.0   N =     1   A =  1.008 g/mole
          --->  Isotope:    H1   Z =  1   N =   1   A =   1.01 g/mole   abundance: 99.989 %
          --->  Isotope:    H2   Z =  1   N =   2   A =   2.01 g/mole   abundance:  0.011 %
-          ElmMassFraction: 100.00 %  ElmAbundance 100.00 % 
-
-
- Material:    G4_Ge    density:  5.323 g/cm3   RadL:   2.301 cm   Nucl.Int.Length:  27.431 cm 
-                       Imean: 350.000 eV   temperature: 293.15 K  pressure:   1.00 atm
-
-   --->  Element: Ge (Ge)   Z = 32.0   N =    73   A = 72.613 g/mole
-         --->  Isotope:  Ge70   Z = 32   N =  70   A =  69.92 g/mole   abundance: 20.840 %
-         --->  Isotope:  Ge72   Z = 32   N =  72   A =  71.92 g/mole   abundance: 27.540 %
-         --->  Isotope:  Ge73   Z = 32   N =  73   A =  72.92 g/mole   abundance:  7.730 %
-         --->  Isotope:  Ge74   Z = 32   N =  74   A =  73.92 g/mole   abundance: 36.280 %
-         --->  Isotope:  Ge76   Z = 32   N =  76   A =  75.92 g/mole   abundance:  7.610 %
           ElmMassFraction: 100.00 %  ElmAbundance 100.00 % 
 
 
@@ -52,12 +34,262 @@
 
 
 
-Checking overlaps for volume DSSD:0 (G4Box) ... OK! 
-
- hInelastic QGSP_BERT  Thresholds: 
-    1) between BERT  and FTF/P over the interval 3 to 6 GeV. 
-    2) between FTF/P and QGS/P over the interval 12 to 25 GeV. 
-  -- quasiElastic: 1 for QGS  and 0 for FTF
+Checking overlaps for volume dssd3|0:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|1:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|2:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|3:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|4:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|5:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|6:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|7:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|8:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|9:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|10:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|11:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|12:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|13:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|14:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|15:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|16:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|17:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|18:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|19:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|20:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|21:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|22:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|23:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|24:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|25:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|26:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|27:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|28:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|29:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|30:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|31:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|32:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|33:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|34:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|35:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|36:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|37:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|38:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|39:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|40:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|41:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|42:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|43:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|44:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|45:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|46:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|47:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|48:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|49:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|50:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|51:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|52:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|53:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|54:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|55:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|56:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|57:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|58:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|59:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|60:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|61:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|62:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|63:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|64:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|65:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|66:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|67:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|68:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|69:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|70:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|71:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|72:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|73:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|74:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|75:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|76:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|77:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|78:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|79:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|80:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|81:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|82:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|83:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|84:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|85:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|86:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|87:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|88:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|89:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|90:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|91:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|92:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|93:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|94:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|95:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|96:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|97:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|98:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|99:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|100:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|101:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|102:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|103:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|104:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|105:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|106:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|107:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|108:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|109:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|110:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|111:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|112:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|113:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|114:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|115:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|116:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|117:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|118:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|119:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|120:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|121:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|122:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|123:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|124:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|125:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|126:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|127:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|128:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|129:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|130:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|131:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|132:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|133:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|134:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|135:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|136:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|137:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|138:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|139:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|140:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|141:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|142:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|143:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|144:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|145:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|146:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|147:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|148:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|149:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|150:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|151:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|152:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|153:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|154:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|155:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|156:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|157:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|158:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|159:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|160:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|161:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|162:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|163:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|164:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|165:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|166:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|167:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|168:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|169:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|170:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|171:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|172:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|173:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|174:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|175:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|176:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|177:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|178:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|179:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|180:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|181:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|182:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|183:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|184:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|185:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|186:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|187:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|188:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|189:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|190:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|191:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|192:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|193:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|194:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|195:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|196:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|197:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|198:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|199:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|200:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|201:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|202:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|203:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|204:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|205:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|206:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|207:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|208:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|209:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|210:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|211:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|212:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|213:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|214:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|215:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|216:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|217:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|218:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|219:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|220:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|221:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|222:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|223:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|224:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|225:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|226:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|227:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|228:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|229:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|230:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|231:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|232:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|233:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|234:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|235:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|236:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|237:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|238:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|239:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|240:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|241:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|242:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|243:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|244:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|245:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|246:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|247:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|248:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|249:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|250:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|251:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|252:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|253:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|254:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3|255:0 (G4Box) ... OK! 
 ### Adding tracking cuts for neutron  TimeCut(ns)= 10000  KinEnergyCut(MeV)= 0
 =======================================================================
 ======                 Electromagnetic Physics Parameters      ========
@@ -65,8 +297,10 @@ Checking overlaps for volume DSSD:0 (G4Box) ... OK!
 LPM effect enabled                                 1
 Enable creation and use of sampling tables         0
 Apply cuts on all EM processes                     0
-Use general process                                0
+Use combined TransportationWithMsc                 Disabled
+Use general process                                1
 Enable linear polarisation for gamma               0
+Enable photoeffect sampling below K-shell          1
 Enable sampling of quantum entanglement            0
 X-section factor for integral approach             0.8
 Min kinetic energy for tables                      100 eV 
@@ -82,7 +316,7 @@ Lowest triplet kinetic energy                      1 MeV
 Enable sampling of gamma linear polarisation       0
 5D gamma conversion model type                     0
 5D gamma conversion model on isolated ion          0
-Livermore data directory                           livermore
+Livermore data directory                           epics_2017
 =======================================================================
 ======                 Ionisation Parameters                   ========
 =======================================================================
@@ -92,8 +326,9 @@ Step function for light ions                       (0.2, 0.1 mm)
 Step function for general ions                     (0.2, 0.1 mm)
 Lowest e+e- kinetic energy                         1 keV
 Lowest muon/hadron kinetic energy                  1 keV
-Fluctuations of dE/dx are enabled                  1
 Use ICRU90 data                                    0
+Fluctuations of dE/dx are enabled                  1
+Type of fluctuation model for leptons and hadrons  Urban
 Use built-in Birks satuaration                     0
 Build CSDA range enabled                           0
 Use cut as a final range enabled                   0
@@ -144,8 +379,8 @@ conv:  for gamma SubType=14 BuildTable=1
      BetheHeitlerLPM : Emin=    0 eV  Emax=  100 TeV  ModifiedTsai
 
 Rayl:  for gamma SubType=11 BuildTable=1
-      Lambda table from 100 eV  to 100 keV, 7 bins/decade, spline: 0
-      LambdaPrime table from 100 keV to 100 TeV in 63 bins 
+      Lambda table from 100 eV  to 150 keV, 7 bins/decade, spline: 0
+      LambdaPrime table from 150 keV to 100 TeV in 62 bins 
       ===== EM models for the G4Region  DefaultRegionForTheWorld ======
    LivermoreRayleigh : Emin=    0 eV  Emax=  100 TeV  CullenGenerator
 
@@ -156,10 +391,10 @@ msc:  for e-  SubType= 10
         WentzelVIUni : Emin=  100 MeV Emax=  100 TeV Nbins=42 100 MeV - 100 TeV
           StepLim=UseSafety Rfact=0.04 Gfact=2.5 Sfact=0.6 DispFlag:1 Skin=1 Llim=1 mm
 
-eIoni:  for e-  XStype:1  SubType=2
+eIoni:  for e-  XStype:3  SubType=2
       dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
       Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
-      StepFunction=(0.2, 1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      StepFunction=(0.2, 1 mm), integ: 3, fluct: 1, linLossLim= 0.01
       ===== EM models for the G4Region  DefaultRegionForTheWorld ======
         MollerBhabha : Emin=    0 eV  Emax=  100 TeV
 
@@ -184,10 +419,10 @@ msc:  for e+  SubType= 10
         WentzelVIUni : Emin=  100 MeV Emax=  100 TeV Nbins=42 100 MeV - 100 TeV
           StepLim=UseSafety Rfact=0.04 Gfact=2.5 Sfact=0.6 DispFlag:1 Skin=1 Llim=1 mm
 
-eIoni:  for e+  XStype:1  SubType=2
+eIoni:  for e+  XStype:3  SubType=2
       dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
       Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
-      StepFunction=(0.2, 1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      StepFunction=(0.2, 1 mm), integ: 3, fluct: 1, linLossLim= 0.01
       ===== EM models for the G4Region  DefaultRegionForTheWorld ======
         MollerBhabha : Emin=    0 eV  Emax=  100 TeV
 
@@ -214,10 +449,10 @@ msc:  for proton  SubType= 10
         WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
           StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llim=1 mm
 
-hIoni:  for proton  XStype:1  SubType=2
+hIoni:  for proton  XStype:3  SubType=2
       dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
       Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
-      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      StepFunction=(0.2, 0.1 mm), integ: 3, fluct: 1, linLossLim= 0.01
       ===== EM models for the G4Region  DefaultRegionForTheWorld ======
                Bragg : Emin=    0 eV  Emax=    2 MeV
           BetheBloch : Emin=    2 MeV Emax=  100 TeV
@@ -246,10 +481,10 @@ msc:  for GenericIon  SubType= 10
             UrbanMsc : Emin=    0 eV  Emax=  100 TeV
           StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llim=1 mm
 
-ionIoni:  for GenericIon  XStype:1  SubType=2
+ionIoni:  for GenericIon  XStype:3  SubType=2
       dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
       Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
-      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.02
+      StepFunction=(0.2, 0.1 mm), integ: 3, fluct: 1, linLossLim= 0.02
       Stopping Power data for 17 ion/material pairs
       ===== EM models for the G4Region  DefaultRegionForTheWorld ======
             BraggIon : Emin=    0 eV  Emax=    2 MeV
@@ -260,10 +495,10 @@ msc:  for alpha  SubType= 10
             UrbanMsc : Emin=    0 eV  Emax=  100 TeV
           StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llim=1 mm
 
-ionIoni:  for alpha  XStype:1  SubType=2
+ionIoni:  for alpha  XStype:3  SubType=2
       dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
       Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
-      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.02
+      StepFunction=(0.2, 0.1 mm), integ: 3, fluct: 1, linLossLim= 0.02
       ===== EM models for the G4Region  DefaultRegionForTheWorld ======
             BraggIon : Emin=    0 eV  Emax=7.9452 MeV
           BetheBloch : Emin=7.9452 MeV Emax=  100 TeV
@@ -273,10 +508,10 @@ msc:  for anti_proton  SubType= 10
         WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
           StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llim=1 mm
 
-hIoni:  for anti_proton  XStype:1  SubType=2
+hIoni:  for anti_proton  XStype:3  SubType=2
       dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
       Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
-      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      StepFunction=(0.2, 0.1 mm), integ: 3, fluct: 1, linLossLim= 0.01
       ===== EM models for the G4Region  DefaultRegionForTheWorld ======
             ICRU73QO : Emin=    0 eV  Emax=    2 MeV
           BetheBloch : Emin=    2 MeV Emax=  100 TeV
@@ -305,10 +540,10 @@ msc:  for kaon+  SubType= 10
         WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
           StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llim=1 mm
 
-hIoni:  for kaon+  XStype:1  SubType=2
+hIoni:  for kaon+  XStype:3  SubType=2
       dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
       Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
-      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      StepFunction=(0.2, 0.1 mm), integ: 3, fluct: 1, linLossLim= 0.01
       ===== EM models for the G4Region  DefaultRegionForTheWorld ======
                Bragg : Emin=    0 eV  Emax=1.05231 MeV
           BetheBloch : Emin=1.05231 MeV Emax=  100 TeV
@@ -337,10 +572,10 @@ msc:  for kaon-  SubType= 10
         WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
           StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llim=1 mm
 
-hIoni:  for kaon-  XStype:1  SubType=2
+hIoni:  for kaon-  XStype:3  SubType=2
       dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
       Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
-      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      StepFunction=(0.2, 0.1 mm), integ: 3, fluct: 1, linLossLim= 0.01
       ===== EM models for the G4Region  DefaultRegionForTheWorld ======
             ICRU73QO : Emin=    0 eV  Emax=1.05231 MeV
           BetheBloch : Emin=1.05231 MeV Emax=  100 TeV
@@ -369,14 +604,13 @@ msc:  for mu+  SubType= 10
         WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
           StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llim=1 mm
 
-muIoni:  for mu+  XStype:1  SubType=2
+muIoni:  for mu+  XStype:3  SubType=2
       dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
       Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
-      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      StepFunction=(0.2, 0.1 mm), integ: 3, fluct: 1, linLossLim= 0.01
       ===== EM models for the G4Region  DefaultRegionForTheWorld ======
                Bragg : Emin=    0 eV  Emax=  200 keV
-          BetheBloch : Emin=  200 keV Emax=    1 GeV
-        MuBetheBloch : Emin=    1 GeV Emax=  100 TeV
+        MuBetheBloch : Emin=  200 keV Emax=  100 TeV
 
 muBrems:  for mu+  XStype:1  SubType=3
       dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
@@ -387,7 +621,7 @@ muBrems:  for mu+  XStype:1  SubType=3
 muPairProd:  for mu+  XStype:1  SubType=4
       dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
       Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 0
-      Sampling table 21x1001; from 1 GeV to 100 TeV 
+      Sampling table 21x1001; from 0.85 GeV to 100 TeV 
       ===== EM models for the G4Region  DefaultRegionForTheWorld ======
           muPairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
 
@@ -402,14 +636,13 @@ msc:  for mu-  SubType= 10
         WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
           StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llim=1 mm
 
-muIoni:  for mu-  XStype:1  SubType=2
+muIoni:  for mu-  XStype:3  SubType=2
       dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
       Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
-      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      StepFunction=(0.2, 0.1 mm), integ: 3, fluct: 1, linLossLim= 0.01
       ===== EM models for the G4Region  DefaultRegionForTheWorld ======
             ICRU73QO : Emin=    0 eV  Emax=  200 keV
-          BetheBloch : Emin=  200 keV Emax=    1 GeV
-        MuBetheBloch : Emin=    1 GeV Emax=  100 TeV
+        MuBetheBloch : Emin=  200 keV Emax=  100 TeV
 
 muBrems:  for mu-  XStype:1  SubType=3
       dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
@@ -420,7 +653,7 @@ muBrems:  for mu-  XStype:1  SubType=3
 muPairProd:  for mu-  XStype:1  SubType=4
       dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
       Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 0
-      Sampling table 21x1001; from 1 GeV to 100 TeV 
+      Sampling table 21x1001; from 0.85 GeV to 100 TeV 
       ===== EM models for the G4Region  DefaultRegionForTheWorld ======
           muPairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
 
@@ -435,10 +668,10 @@ msc:  for pi+  SubType= 10
         WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
           StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llim=1 mm
 
-hIoni:  for pi+  XStype:1  SubType=2
+hIoni:  for pi+  XStype:3  SubType=2
       dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
       Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
-      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      StepFunction=(0.2, 0.1 mm), integ: 3, fluct: 1, linLossLim= 0.01
       ===== EM models for the G4Region  DefaultRegionForTheWorld ======
                Bragg : Emin=    0 eV  Emax=297.505 keV
           BetheBloch : Emin=297.505 keV Emax=  100 TeV
@@ -467,10 +700,10 @@ msc:  for pi-  SubType= 10
         WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
           StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llim=1 mm
 
-hIoni:  for pi-  XStype:1  SubType=2
+hIoni:  for pi-  XStype:3  SubType=2
       dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
       Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
-      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      StepFunction=(0.2, 0.1 mm), integ: 3, fluct: 1, linLossLim= 0.01
       ===== EM models for the G4Region  DefaultRegionForTheWorld ======
             ICRU73QO : Emin=    0 eV  Emax=297.505 keV
           BetheBloch : Emin=297.505 keV Emax=  100 TeV
@@ -504,49 +737,34 @@ CoulombScat:  for pi- XStype:1 SubType=1 BuildTable=1
         Model:             hElasticCHIPS: 0 eV  ---> 100 TeV
      Cr_sctns:        G4NeutronElasticXS: 0 eV  ---> 100 TeV
 
+
   Process: neutronInelastic
         Model:                      QGSP: 12 GeV ---> 100 TeV
         Model:                      FTFP: 3 GeV ---> 25 GeV
-        Model:            BertiniCascade: 0 eV  ---> 6 GeV
+        Model:            Binary Cascade: 0 eV  ---> 6 GeV
      Cr_sctns:      G4NeutronInelasticXS: 0 eV  ---> 100 TeV
+
 
   Process: nCapture
         Model:               nRadCapture: 0 eV  ---> 100 TeV
      Cr_sctns:        G4NeutronCaptureXS: 0 eV  ---> 100 TeV
 
+
   Process: nKiller
 
 ---------------------------------------------------
-                           Hadronic Processes for B-
-
-  Process: hadElastic
-        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
-     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
-
-  Process: B-Inelastic
-        Model:                      QGSP: 12 GeV ---> 100 TeV
-        Model:                      FTFP: 0 eV  ---> 25 GeV
-     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
-
----------------------------------------------------
-                           Hadronic Processes for D-
-
-  Process: hadElastic
-        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
-     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
-
-  Process: D-Inelastic
-        Model:                      QGSP: 12 GeV ---> 100 TeV
-        Model:                      FTFP: 0 eV  ---> 25 GeV
-     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
-
----------------------------------------------------
                            Hadronic Processes for GenericIon
+
+  Process: ionElastic
+        Model:          NNDiffuseElastic: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
 
   Process: ionInelastic
         Model:  Binary Light Ion Cascade: 0 eV /n ---> 6 GeV/n
         Model:                      FTFP: 3 GeV/n ---> 100 TeV/n
      Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
 
 ---------------------------------------------------
                            Hadronic Processes for He3
@@ -555,10 +773,12 @@ CoulombScat:  for pi- XStype:1 SubType=1 BuildTable=1
         Model:              hElasticLHEP: 0 eV /n ---> 100 TeV/n
      Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
 
+
   Process: He3Inelastic
         Model:  Binary Light Ion Cascade: 0 eV /n ---> 6 GeV/n
         Model:                      FTFP: 3 GeV/n ---> 100 TeV/n
      Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
 
 ---------------------------------------------------
                            Hadronic Processes for alpha
@@ -567,10 +787,12 @@ CoulombScat:  for pi- XStype:1 SubType=1 BuildTable=1
         Model:              hElasticLHEP: 0 eV /n ---> 100 TeV/n
      Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
 
+
   Process: alphaInelastic
         Model:  Binary Light Ion Cascade: 0 eV /n ---> 6 GeV/n
         Model:                      FTFP: 3 GeV/n ---> 100 TeV/n
      Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
 
 ---------------------------------------------------
                            Hadronic Processes for anti_He3
@@ -580,9 +802,11 @@ CoulombScat:  for pi- XStype:1 SubType=1 BuildTable=1
         Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
      Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
 
+
   Process: anti_He3Inelastic
         Model:                      FTFP: 0 eV /n ---> 100 TeV/n
      Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
 
   Process: hFritiofCaptureAtRest
 
@@ -594,9 +818,11 @@ CoulombScat:  for pi- XStype:1 SubType=1 BuildTable=1
         Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
      Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
 
+
   Process: anti_alphaInelastic
         Model:                      FTFP: 0 eV /n ---> 100 TeV/n
      Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
 
   Process: hFritiofCaptureAtRest
 
@@ -608,9 +834,16 @@ CoulombScat:  for pi- XStype:1 SubType=1 BuildTable=1
         Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
      Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
 
+
   Process: anti_deuteronInelastic
         Model:                      FTFP: 0 eV /n ---> 100 TeV/n
      Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for anti_hypertriton
 
   Process: hFritiofCaptureAtRest
 
@@ -621,10 +854,12 @@ CoulombScat:  for pi- XStype:1 SubType=1 BuildTable=1
         Model:              hElasticLHEP: 0 eV  ---> 100 TeV
      Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
 
+
   Process: anti_lambdaInelastic
         Model:                      QGSP: 12 GeV ---> 100 TeV
         Model:                      FTFP: 0 eV  ---> 25 GeV
      Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
 
   Process: hFritiofCaptureAtRest
 
@@ -636,9 +871,11 @@ CoulombScat:  for pi- XStype:1 SubType=1 BuildTable=1
         Model:              AntiAElastic: 100 MeV ---> 100 TeV
      Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
 
+
   Process: anti_neutronInelastic
         Model:                      FTFP: 0 eV  ---> 100 TeV
      Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
 
   Process: hFritiofCaptureAtRest
 
@@ -650,9 +887,11 @@ CoulombScat:  for pi- XStype:1 SubType=1 BuildTable=1
         Model:              AntiAElastic: 100 MeV ---> 100 TeV
      Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
 
+
   Process: anti_protonInelastic
         Model:                      FTFP: 0 eV  ---> 100 TeV
      Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
 
   Process: hFritiofCaptureAtRest
 
@@ -664,9 +903,11 @@ CoulombScat:  for pi- XStype:1 SubType=1 BuildTable=1
         Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
      Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
 
+
   Process: anti_tritonInelastic
         Model:                      FTFP: 0 eV /n ---> 100 TeV/n
      Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
 
   Process: hFritiofCaptureAtRest
 
@@ -677,10 +918,12 @@ CoulombScat:  for pi- XStype:1 SubType=1 BuildTable=1
         Model:              hElasticLHEP: 0 eV /n ---> 100 TeV/n
      Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
 
+
   Process: dInelastic
         Model:  Binary Light Ion Cascade: 0 eV /n ---> 6 GeV/n
         Model:                      FTFP: 3 GeV/n ---> 100 TeV/n
      Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
 
 ---------------------------------------------------
                            Hadronic Processes for e+
@@ -689,12 +932,14 @@ CoulombScat:  for pi- XStype:1 SubType=1 BuildTable=1
         Model:   G4ElectroVDNuclearModel: 0 eV  ---> 1 PeV
      Cr_sctns:          ElectroNuclearXS: 0 eV  ---> 100 TeV
 
+
 ---------------------------------------------------
                            Hadronic Processes for e-
 
   Process: electronNuclear
         Model:   G4ElectroVDNuclearModel: 0 eV  ---> 1 PeV
      Cr_sctns:          ElectroNuclearXS: 0 eV  ---> 100 TeV
+
 
 ---------------------------------------------------
                            Hadronic Processes for gamma
@@ -705,6 +950,7 @@ CoulombScat:  for pi- XStype:1 SubType=1 BuildTable=1
         Model:           TheoFSGenerator: 3 GeV ---> 100 TeV
      Cr_sctns:            GammaNuclearXS: 0 eV  ---> 100 TeV
 
+
 ---------------------------------------------------
                            Hadronic Processes for kaon+
 
@@ -712,11 +958,13 @@ CoulombScat:  for pi- XStype:1 SubType=1 BuildTable=1
         Model:              hElasticLHEP: 0 eV  ---> 100 TeV
      Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
 
+
   Process: kaon+Inelastic
         Model:                      QGSP: 12 GeV ---> 100 TeV
         Model:                      FTFP: 3 GeV ---> 25 GeV
         Model:            BertiniCascade: 0 eV  ---> 6 GeV
      Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
 
 ---------------------------------------------------
                            Hadronic Processes for kaon-
@@ -725,11 +973,13 @@ CoulombScat:  for pi- XStype:1 SubType=1 BuildTable=1
         Model:              hElasticLHEP: 0 eV  ---> 100 TeV
      Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
 
+
   Process: kaon-Inelastic
         Model:                      QGSP: 12 GeV ---> 100 TeV
         Model:                      FTFP: 3 GeV ---> 25 GeV
         Model:            BertiniCascade: 0 eV  ---> 6 GeV
      Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
 
   Process: hBertiniCaptureAtRest
 
@@ -740,11 +990,13 @@ CoulombScat:  for pi- XStype:1 SubType=1 BuildTable=1
         Model:              hElasticLHEP: 0 eV  ---> 100 TeV
      Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
 
+
   Process: lambdaInelastic
         Model:                      QGSP: 12 GeV ---> 100 TeV
         Model:                      FTFP: 3 GeV ---> 25 GeV
         Model:            BertiniCascade: 0 eV  ---> 6 GeV
      Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
 
 ---------------------------------------------------
                            Hadronic Processes for mu+
@@ -753,12 +1005,14 @@ CoulombScat:  for pi- XStype:1 SubType=1 BuildTable=1
         Model:      G4MuonVDNuclearModel: 0 eV  ---> 1 PeV
      Cr_sctns:     KokoulinMuonNuclearXS: 0 eV  ---> 100 TeV
 
+
 ---------------------------------------------------
                            Hadronic Processes for mu-
 
   Process: muonNuclear
         Model:      G4MuonVDNuclearModel: 0 eV  ---> 1 PeV
      Cr_sctns:     KokoulinMuonNuclearXS: 0 eV  ---> 100 TeV
+
 
   Process: muMinusCaptureAtRest
 
@@ -769,11 +1023,13 @@ CoulombScat:  for pi- XStype:1 SubType=1 BuildTable=1
         Model:           hElasticGlauber: 0 eV  ---> 100 TeV
      Cr_sctns:  BarashenkovGlauberGribov: 0 eV  ---> 100 TeV
 
+
   Process: pi+Inelastic
         Model:                      QGSP: 12 GeV ---> 100 TeV
         Model:                      FTFP: 3 GeV ---> 25 GeV
         Model:            BertiniCascade: 0 eV  ---> 6 GeV
      Cr_sctns:  BarashenkovGlauberGribov: 0 eV  ---> 100 TeV
+
 
 ---------------------------------------------------
                            Hadronic Processes for pi-
@@ -782,11 +1038,13 @@ CoulombScat:  for pi- XStype:1 SubType=1 BuildTable=1
         Model:           hElasticGlauber: 0 eV  ---> 100 TeV
      Cr_sctns:  BarashenkovGlauberGribov: 0 eV  ---> 100 TeV
 
+
   Process: pi-Inelastic
         Model:                      QGSP: 12 GeV ---> 100 TeV
         Model:                      FTFP: 3 GeV ---> 25 GeV
         Model:            BertiniCascade: 0 eV  ---> 6 GeV
      Cr_sctns:  BarashenkovGlauberGribov: 0 eV  ---> 100 TeV
+
 
   Process: hBertiniCaptureAtRest
 
@@ -797,11 +1055,13 @@ CoulombScat:  for pi- XStype:1 SubType=1 BuildTable=1
         Model:             hElasticCHIPS: 0 eV  ---> 100 TeV
      Cr_sctns:  BarashenkovGlauberGribov: 0 eV  ---> 100 TeV
 
+
   Process: protonInelastic
         Model:                      QGSP: 12 GeV ---> 100 TeV
         Model:                      FTFP: 3 GeV ---> 25 GeV
-        Model:            BertiniCascade: 0 eV  ---> 6 GeV
+        Model:            Binary Cascade: 0 eV  ---> 6 GeV
      Cr_sctns:  BarashenkovGlauberGribov: 0 eV  ---> 100 TeV
+
 
 ---------------------------------------------------
                            Hadronic Processes for sigma-
@@ -810,11 +1070,13 @@ CoulombScat:  for pi- XStype:1 SubType=1 BuildTable=1
         Model:              hElasticLHEP: 0 eV  ---> 100 TeV
      Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
 
+
   Process: sigma-Inelastic
         Model:                      QGSP: 12 GeV ---> 100 TeV
         Model:                      FTFP: 3 GeV ---> 25 GeV
         Model:            BertiniCascade: 0 eV  ---> 6 GeV
      Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
 
   Process: hBertiniCaptureAtRest
 
@@ -825,10 +1087,12 @@ CoulombScat:  for pi- XStype:1 SubType=1 BuildTable=1
         Model:              hElasticLHEP: 0 eV /n ---> 100 TeV/n
      Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
 
+
   Process: tInelastic
         Model:  Binary Light Ion Cascade: 0 eV /n ---> 6 GeV/n
         Model:                      FTFP: 3 GeV/n ---> 100 TeV/n
      Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
 
 ================================================================
 =======================================================================
@@ -836,29 +1100,78 @@ CoulombScat:  for pi- XStype:1 SubType=1 BuildTable=1
 =======================================================================
 Type of pre-compound inverse x-section              3
 Pre-compound model active                           1
-Pre-compound excitation low energy (MeV)            0.1
-Pre-compound excitation high energy (MeV)           30
+Pre-compound excitation low energy                  100 keV
+Pre-compound excitation high energy                 30 MeV
 Type of de-excitation inverse x-section             3
 Type of de-excitation factory                       Evaporation+GEM
 Number of de-excitation channels                    68
-Min excitation energy (keV)                         0.01
-Min energy per nucleon for multifragmentation (MeV) 2e+05
-Limit excitation energy for Fermi BreakUp (MeV)     20
+Min excitation energy                               10 eV 
+Min energy per nucleon for multifragmentation       200 GeV
+Limit excitation energy for Fermi BreakUp           20 MeV
 Level density (1/MeV)                               0.075
 Use simple level density model                      1
-Use discrete excitation energy of the residual      0
-Time limit for long lived isomeres (ns)             1
+Use discrete excitation energy of the residual      1
+Time limit for long lived isomeres                  1 ns 
 Isomer production flag                              1
 Internal e- conversion flag                         1
 Store e- internal conversion data                   0
 Correlated gamma emission flag                      0
 Max 2J for sampling of angular correlations         10
 =======================================================================
+Visualization Manager instantiating with verbosity "warnings (3)"...
+Visualization Manager initialising...
+Registering graphics systems...
+
+You have successfully registered the following graphics systems.
+Registered graphics systems are:
+  ASCIITree (ATree)
+  DAWNFILE (DAWNFILE)
+  G4HepRepFile (HepRepFile)
+  RayTracer (RayTracer)
+  VRML2FILE (VRML2FILE)
+  gMocrenFile (gMocrenFile)
+  TOOLSSG_OFFSCREEN (TSG_OFFSCREEN)
+  TOOLSSG_OFFSCREEN (TSG_OFFSCREEN, TSG_FILE)
+  OpenGLImmediateQt (OGLIQt, OGLI)
+  OpenGLStoredQt (OGLSQt, OGL, OGLS)
+  TOOLSSG_QT_GLES (TSG_QT_GLES, TSGQt, TSG)
+
+Registering model factories...
+
+You have successfully registered the following model factories.
+Registered model factories:
+  generic
+  drawByAttribute
+  drawByCharge
+  drawByOriginVolume
+  drawByParticleID
+  drawByEncounteredVolume
+
+Registered models:
+  None
+
+Registered filter factories:
+  attributeFilter
+  chargeFilter
+  originVolumeFilter
+  particleFilter
+  encounteredVolumeFilter
+
+Registered filters:
+  None
+
+You have successfully registered the following user vis actions.
+Run Duration User Vis Actions: none
+End of Event User Vis Actions: none
+End of Run User Vis Actions: none
+
+Some /vis commands (optionally) take a string to specify colour.
+"/vis/list" to see available colours.
+G4VisManager: Using G4TrajectoryDrawByCharge as fallback trajectory model.
+See commands in /vis/modeling/trajectories/ for other options.
 G4WT0 > ... create file : outputdata_t0.root - done
-G4WT1 > ... create file : outputdata_t1.root - done
-G4WT1 > ... open analysis file : outputdata_t1.root - done
 G4WT0 > ... open analysis file : outputdata_t0.root - done
 G4WT0 > ... write file : outputdata_t0.root - done
-G4WT1 > ... write file : outputdata_t1.root - done
-G4WT1 > ... close file : outputdata_t1.root - done
 G4WT0 > ... close file : outputdata_t0.root - done
+Graphics systems deleted.
+Visualization Manager deleting...

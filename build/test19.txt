@@ -1,12 +1,6 @@
 
-
-          ################################
-          !!! G4Backtrace is activated !!!
-          ################################
-
-
 **************************************************************
- Geant4 version Name: geant4-11-00-patch-01 [MT]   (8-March-2022)
+ Geant4 version Name: geant4-11-01-patch-01 [MT]   (10-February-2023)
   << in Multi-threaded mode >> 
                        Copyright : Geant4 Collaboration
                       References : NIM A 506 (2003), 250-303
@@ -15,7 +9,7 @@
                              WWW : http://geant4.org/
 **************************************************************
 
-<<< Geant4 Physics List simulation engine: QGSP_BERT
+<<< Geant4 Physics List simulation engine: QGSP_BIC
 
 
 ***** Table : Nb of materials = 3 *****
@@ -29,19 +23,17 @@
           ElmMassFraction: 100.00 %  ElmAbundance 100.00 % 
 
 
- Material:    G4_Ge    density:  5.323 g/cm3   RadL:   2.301 cm   Nucl.Int.Length:  27.431 cm 
-                       Imean: 350.000 eV   temperature: 293.15 K  pressure:   1.00 atm
+ Material:    G4_Si    density:  2.330 g/cm3   RadL:   9.366 cm   Nucl.Int.Length:  45.660 cm 
+                       Imean: 173.000 eV   temperature: 293.15 K  pressure:   1.00 atm
 
-   --->  Element: Ge (Ge)   Z = 32.0   N =    73   A = 72.613 g/mole
-         --->  Isotope:  Ge70   Z = 32   N =  70   A =  69.92 g/mole   abundance: 20.840 %
-         --->  Isotope:  Ge72   Z = 32   N =  72   A =  71.92 g/mole   abundance: 27.540 %
-         --->  Isotope:  Ge73   Z = 32   N =  73   A =  72.92 g/mole   abundance:  7.730 %
-         --->  Isotope:  Ge74   Z = 32   N =  74   A =  73.92 g/mole   abundance: 36.280 %
-         --->  Isotope:  Ge76   Z = 32   N =  76   A =  75.92 g/mole   abundance:  7.610 %
+   --->  Element: Si (Si)   Z = 14.0   N =    28   A = 28.085 g/mole
+         --->  Isotope:  Si28   Z = 14   N =  28   A =  27.98 g/mole   abundance: 92.230 %
+         --->  Isotope:  Si29   Z = 14   N =  29   A =  28.98 g/mole   abundance:  4.683 %
+         --->  Isotope:  Si30   Z = 14   N =  30   A =  29.97 g/mole   abundance:  3.087 %
           ElmMassFraction: 100.00 %  ElmAbundance 100.00 % 
 
 
- Material:  dssdmat    density:  2.320 g/cm3   RadL:   9.406 cm   Nucl.Int.Length:  45.857 cm 
+ Material:  dssdmat    density:  2.330 g/cm3   RadL:   9.366 cm   Nucl.Int.Length:  45.660 cm 
                        Imean: 173.000 eV   temperature: 293.15 K  pressure:   1.00 atm
 
    --->  Element: Si (Si)   Z = 14.0   N =    28   A = 28.085 g/mole
@@ -52,779 +44,38 @@
 
 
 
-Checking overlaps for volume dssd2|0000:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0001:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0002:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0003:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0004:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0005:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0006:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0007:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0008:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0009:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0010:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0011:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0012:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0013:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0014:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0015:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0010:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0011:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0012:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0013:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0014:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0015:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0016:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0017:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0018:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0019:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0020:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0021:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0022:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0023:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0024:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0025:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0020:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0021:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0022:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0023:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0024:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0025:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0026:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0027:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0028:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0029:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0030:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0031:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0032:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0033:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0034:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0035:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0030:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0031:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0032:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0033:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0034:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0035:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0036:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0037:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0038:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0039:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0040:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0041:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0042:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0043:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0044:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0045:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0040:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0041:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0042:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0043:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0044:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0045:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0046:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0047:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0048:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0049:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0050:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0051:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0052:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0053:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0054:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0055:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0050:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0051:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0052:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0053:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0054:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0055:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0056:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0057:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0058:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0059:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0060:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0061:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0062:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0063:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0064:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0065:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0060:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0061:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0062:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0063:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0064:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0065:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0066:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0067:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0068:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0069:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0070:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0071:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0072:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0073:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0074:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0075:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0070:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0071:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0072:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0073:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0074:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0075:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0076:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0077:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0078:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0079:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0080:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0081:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0082:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0083:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0084:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0085:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0080:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0081:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0082:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0083:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0084:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0085:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0086:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0087:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0088:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0089:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0090:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0091:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0092:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0093:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0094:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0095:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0090:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0091:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0092:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0093:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0094:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0095:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0096:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0097:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0098:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0099:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0100:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0101:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0102:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0103:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0104:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0105:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0100:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0101:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0102:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0103:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0104:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0105:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0106:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0107:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0108:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0109:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0110:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0111:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0112:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0113:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0114:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0115:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0110:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0111:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0112:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0113:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0114:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0115:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0116:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0117:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0118:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0119:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0120:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0121:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0122:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0123:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0124:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0125:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0120:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0121:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0122:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0123:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0124:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0125:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0126:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0127:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0128:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0129:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0130:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0131:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0132:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0133:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0134:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0135:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0130:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0131:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0132:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0133:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0134:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0135:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0136:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0137:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0138:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0139:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0140:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0141:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0142:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0143:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0144:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0145:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0140:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0141:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0142:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0143:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0144:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0145:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0146:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0147:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0148:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0149:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0150:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0151:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0152:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0153:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0154:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0155:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0150:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0151:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0152:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0153:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0154:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0155:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0156:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0157:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0158:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0159:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0160:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0161:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0162:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0163:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0164:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd2|0165:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0000:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0001:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0002:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0003:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0004:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0005:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0006:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0007:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0008:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0009:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0010:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0011:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0012:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0013:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0014:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0015:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0010:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0011:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0012:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0013:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0014:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0015:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0016:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0017:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0018:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0019:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0020:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0021:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0022:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0023:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0024:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0025:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0020:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0021:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0022:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0023:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0024:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0025:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0026:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0027:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0028:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0029:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0030:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0031:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0032:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0033:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0034:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0035:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0030:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0031:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0032:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0033:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0034:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0035:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0036:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0037:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0038:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0039:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0040:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0041:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0042:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0043:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0044:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0045:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0040:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0041:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0042:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0043:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0044:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0045:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0046:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0047:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0048:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0049:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0050:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0051:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0052:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0053:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0054:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0055:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0050:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0051:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0052:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0053:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0054:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0055:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0056:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0057:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0058:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0059:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0060:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0061:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0062:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0063:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0064:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0065:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0060:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0061:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0062:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0063:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0064:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0065:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0066:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0067:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0068:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0069:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0070:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0071:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0072:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0073:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0074:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0075:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0070:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0071:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0072:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0073:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0074:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0075:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0076:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0077:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0078:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0079:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0080:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0081:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0082:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0083:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0084:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0085:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0080:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0081:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0082:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0083:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0084:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0085:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0086:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0087:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0088:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0089:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0090:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0091:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0092:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0093:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0094:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0095:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0090:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0091:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0092:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0093:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0094:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0095:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0096:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0097:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0098:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0099:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0100:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0101:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0102:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0103:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0104:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0105:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0100:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0101:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0102:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0103:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0104:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0105:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0106:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0107:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0108:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0109:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0110:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0111:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0112:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0113:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0114:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0115:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0110:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0111:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0112:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0113:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0114:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0115:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0116:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0117:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0118:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0119:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0120:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0121:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0122:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0123:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0124:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0125:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0120:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0121:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0122:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0123:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0124:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0125:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0126:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0127:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0128:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0129:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0130:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0131:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0132:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0133:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0134:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0135:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0130:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0131:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0132:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0133:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0134:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0135:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0136:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0137:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0138:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0139:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0140:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0141:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0142:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0143:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0144:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0145:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0140:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0141:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0142:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0143:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0144:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0145:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0146:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0147:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0148:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0149:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0150:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0151:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0152:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0153:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0154:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0155:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0150:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0151:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0152:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0153:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0154:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0155:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0156:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0157:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0158:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0159:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0160:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0161:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0162:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0163:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0164:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd1|0165:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0000:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0001:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0002:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0003:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0004:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0005:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0006:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0007:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0008:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0009:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0010:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0011:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0012:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0013:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0014:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0015:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0010:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0011:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0012:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0013:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0014:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0015:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0016:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0017:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0018:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0019:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0020:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0021:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0022:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0023:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0024:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0025:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0020:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0021:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0022:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0023:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0024:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0025:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0026:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0027:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0028:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0029:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0030:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0031:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0032:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0033:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0034:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0035:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0030:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0031:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0032:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0033:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0034:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0035:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0036:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0037:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0038:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0039:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0040:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0041:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0042:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0043:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0044:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0045:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0040:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0041:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0042:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0043:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0044:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0045:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0046:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0047:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0048:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0049:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0050:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0051:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0052:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0053:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0054:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0055:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0050:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0051:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0052:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0053:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0054:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0055:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0056:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0057:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0058:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0059:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0060:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0061:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0062:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0063:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0064:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0065:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0060:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0061:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0062:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0063:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0064:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0065:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0066:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0067:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0068:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0069:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0070:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0071:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0072:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0073:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0074:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0075:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0070:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0071:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0072:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0073:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0074:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0075:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0076:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0077:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0078:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0079:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0080:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0081:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0082:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0083:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0084:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0085:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0080:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0081:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0082:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0083:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0084:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0085:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0086:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0087:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0088:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0089:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0090:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0091:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0092:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0093:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0094:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0095:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0090:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0091:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0092:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0093:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0094:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0095:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0096:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0097:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0098:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0099:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0100:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0101:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0102:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0103:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0104:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0105:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0100:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0101:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0102:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0103:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0104:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0105:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0106:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0107:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0108:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0109:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0110:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0111:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0112:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0113:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0114:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0115:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0110:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0111:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0112:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0113:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0114:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0115:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0116:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0117:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0118:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0119:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0120:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0121:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0122:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0123:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0124:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0125:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0120:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0121:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0122:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0123:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0124:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0125:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0126:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0127:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0128:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0129:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0130:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0131:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0132:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0133:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0134:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0135:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0130:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0131:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0132:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0133:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0134:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0135:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0136:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0137:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0138:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0139:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0140:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0141:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0142:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0143:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0144:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0145:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0140:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0141:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0142:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0143:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0144:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0145:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0146:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0147:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0148:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0149:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0150:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0151:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0152:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0153:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0154:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0155:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0150:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0151:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0152:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0153:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0154:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0155:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0156:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0157:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0158:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0159:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0160:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0161:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0162:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0163:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0164:0 (G4Box) ... OK! 
-Checking overlaps for volume dssd3|0165:0 (G4Box) ... OK! 
-
- hInelastic QGSP_BERT  Thresholds: 
-    1) between BERT  and FTF/P over the interval 3 to 6 GeV. 
-    2) between FTF/P and QGS/P over the interval 12 to 25 GeV. 
-  -- quasiElastic: 1 for QGS  and 0 for FTF
+Checking overlaps for volume dssd3x|0:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3x|1:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3x|2:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3x|3:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3x|4:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3x|5:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3x|6:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3x|7:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3x|8:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3x|9:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3x|10:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3x|11:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3x|12:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3x|13:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3x|14:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3x|15:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3y|0:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3y|1:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3y|2:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3y|3:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3y|4:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3y|5:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3y|6:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3y|7:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3y|8:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3y|9:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3y|10:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3y|11:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3y|12:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3y|13:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3y|14:0 (G4Box) ... OK! 
+Checking overlaps for volume dssd3y|15:0 (G4Box) ... OK! 
 ### Adding tracking cuts for neutron  TimeCut(ns)= 10000  KinEnergyCut(MeV)= 0
 =======================================================================
 ======                 Electromagnetic Physics Parameters      ========
@@ -832,8 +83,10 @@ Checking overlaps for volume dssd3|0165:0 (G4Box) ... OK!
 LPM effect enabled                                 1
 Enable creation and use of sampling tables         0
 Apply cuts on all EM processes                     0
-Use general process                                0
+Use combined TransportationWithMsc                 Disabled
+Use general process                                1
 Enable linear polarisation for gamma               0
+Enable photoeffect sampling below K-shell          1
 Enable sampling of quantum entanglement            0
 X-section factor for integral approach             0.8
 Min kinetic energy for tables                      100 eV 
@@ -849,7 +102,7 @@ Lowest triplet kinetic energy                      1 MeV
 Enable sampling of gamma linear polarisation       0
 5D gamma conversion model type                     0
 5D gamma conversion model on isolated ion          0
-Livermore data directory                           livermore
+Livermore data directory                           epics_2017
 =======================================================================
 ======                 Ionisation Parameters                   ========
 =======================================================================
@@ -859,8 +112,9 @@ Step function for light ions                       (0.2, 0.1 mm)
 Step function for general ions                     (0.2, 0.1 mm)
 Lowest e+e- kinetic energy                         1 keV
 Lowest muon/hadron kinetic energy                  1 keV
-Fluctuations of dE/dx are enabled                  1
 Use ICRU90 data                                    0
+Fluctuations of dE/dx are enabled                  1
+Type of fluctuation model for leptons and hadrons  Urban
 Use built-in Birks satuaration                     0
 Build CSDA range enabled                           0
 Use cut as a final range enabled                   0
@@ -911,8 +165,8 @@ conv:  for gamma SubType=14 BuildTable=1
      BetheHeitlerLPM : Emin=    0 eV  Emax=  100 TeV  ModifiedTsai
 
 Rayl:  for gamma SubType=11 BuildTable=1
-      Lambda table from 100 eV  to 100 keV, 7 bins/decade, spline: 0
-      LambdaPrime table from 100 keV to 100 TeV in 63 bins 
+      Lambda table from 100 eV  to 150 keV, 7 bins/decade, spline: 0
+      LambdaPrime table from 150 keV to 100 TeV in 62 bins 
       ===== EM models for the G4Region  DefaultRegionForTheWorld ======
    LivermoreRayleigh : Emin=    0 eV  Emax=  100 TeV  CullenGenerator
 
@@ -923,10 +177,10 @@ msc:  for e-  SubType= 10
         WentzelVIUni : Emin=  100 MeV Emax=  100 TeV Nbins=42 100 MeV - 100 TeV
           StepLim=UseSafety Rfact=0.04 Gfact=2.5 Sfact=0.6 DispFlag:1 Skin=1 Llim=1 mm
 
-eIoni:  for e-  XStype:1  SubType=2
+eIoni:  for e-  XStype:3  SubType=2
       dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
       Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
-      StepFunction=(0.2, 1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      StepFunction=(0.2, 1 mm), integ: 3, fluct: 1, linLossLim= 0.01
       ===== EM models for the G4Region  DefaultRegionForTheWorld ======
         MollerBhabha : Emin=    0 eV  Emax=  100 TeV
 
@@ -951,10 +205,10 @@ msc:  for e+  SubType= 10
         WentzelVIUni : Emin=  100 MeV Emax=  100 TeV Nbins=42 100 MeV - 100 TeV
           StepLim=UseSafety Rfact=0.04 Gfact=2.5 Sfact=0.6 DispFlag:1 Skin=1 Llim=1 mm
 
-eIoni:  for e+  XStype:1  SubType=2
+eIoni:  for e+  XStype:3  SubType=2
       dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
       Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
-      StepFunction=(0.2, 1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      StepFunction=(0.2, 1 mm), integ: 3, fluct: 1, linLossLim= 0.01
       ===== EM models for the G4Region  DefaultRegionForTheWorld ======
         MollerBhabha : Emin=    0 eV  Emax=  100 TeV
 
@@ -981,10 +235,10 @@ msc:  for proton  SubType= 10
         WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
           StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llim=1 mm
 
-hIoni:  for proton  XStype:1  SubType=2
+hIoni:  for proton  XStype:3  SubType=2
       dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
       Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
-      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      StepFunction=(0.2, 0.1 mm), integ: 3, fluct: 1, linLossLim= 0.01
       ===== EM models for the G4Region  DefaultRegionForTheWorld ======
                Bragg : Emin=    0 eV  Emax=    2 MeV
           BetheBloch : Emin=    2 MeV Emax=  100 TeV
@@ -1013,10 +267,10 @@ msc:  for GenericIon  SubType= 10
             UrbanMsc : Emin=    0 eV  Emax=  100 TeV
           StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llim=1 mm
 
-ionIoni:  for GenericIon  XStype:1  SubType=2
+ionIoni:  for GenericIon  XStype:3  SubType=2
       dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
       Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
-      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.02
+      StepFunction=(0.2, 0.1 mm), integ: 3, fluct: 1, linLossLim= 0.02
       Stopping Power data for 17 ion/material pairs
       ===== EM models for the G4Region  DefaultRegionForTheWorld ======
             BraggIon : Emin=    0 eV  Emax=    2 MeV
@@ -1027,10 +281,10 @@ msc:  for alpha  SubType= 10
             UrbanMsc : Emin=    0 eV  Emax=  100 TeV
           StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llim=1 mm
 
-ionIoni:  for alpha  XStype:1  SubType=2
+ionIoni:  for alpha  XStype:3  SubType=2
       dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
       Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
-      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.02
+      StepFunction=(0.2, 0.1 mm), integ: 3, fluct: 1, linLossLim= 0.02
       ===== EM models for the G4Region  DefaultRegionForTheWorld ======
             BraggIon : Emin=    0 eV  Emax=7.9452 MeV
           BetheBloch : Emin=7.9452 MeV Emax=  100 TeV
@@ -1040,10 +294,10 @@ msc:  for anti_proton  SubType= 10
         WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
           StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llim=1 mm
 
-hIoni:  for anti_proton  XStype:1  SubType=2
+hIoni:  for anti_proton  XStype:3  SubType=2
       dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
       Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
-      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      StepFunction=(0.2, 0.1 mm), integ: 3, fluct: 1, linLossLim= 0.01
       ===== EM models for the G4Region  DefaultRegionForTheWorld ======
             ICRU73QO : Emin=    0 eV  Emax=    2 MeV
           BetheBloch : Emin=    2 MeV Emax=  100 TeV
@@ -1072,10 +326,10 @@ msc:  for kaon+  SubType= 10
         WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
           StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llim=1 mm
 
-hIoni:  for kaon+  XStype:1  SubType=2
+hIoni:  for kaon+  XStype:3  SubType=2
       dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
       Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
-      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      StepFunction=(0.2, 0.1 mm), integ: 3, fluct: 1, linLossLim= 0.01
       ===== EM models for the G4Region  DefaultRegionForTheWorld ======
                Bragg : Emin=    0 eV  Emax=1.05231 MeV
           BetheBloch : Emin=1.05231 MeV Emax=  100 TeV
@@ -1104,10 +358,10 @@ msc:  for kaon-  SubType= 10
         WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
           StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llim=1 mm
 
-hIoni:  for kaon-  XStype:1  SubType=2
+hIoni:  for kaon-  XStype:3  SubType=2
       dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
       Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
-      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      StepFunction=(0.2, 0.1 mm), integ: 3, fluct: 1, linLossLim= 0.01
       ===== EM models for the G4Region  DefaultRegionForTheWorld ======
             ICRU73QO : Emin=    0 eV  Emax=1.05231 MeV
           BetheBloch : Emin=1.05231 MeV Emax=  100 TeV
@@ -1136,14 +390,13 @@ msc:  for mu+  SubType= 10
         WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
           StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llim=1 mm
 
-muIoni:  for mu+  XStype:1  SubType=2
+muIoni:  for mu+  XStype:3  SubType=2
       dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
       Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
-      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      StepFunction=(0.2, 0.1 mm), integ: 3, fluct: 1, linLossLim= 0.01
       ===== EM models for the G4Region  DefaultRegionForTheWorld ======
                Bragg : Emin=    0 eV  Emax=  200 keV
-          BetheBloch : Emin=  200 keV Emax=    1 GeV
-        MuBetheBloch : Emin=    1 GeV Emax=  100 TeV
+        MuBetheBloch : Emin=  200 keV Emax=  100 TeV
 
 muBrems:  for mu+  XStype:1  SubType=3
       dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
@@ -1154,7 +407,7 @@ muBrems:  for mu+  XStype:1  SubType=3
 muPairProd:  for mu+  XStype:1  SubType=4
       dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
       Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 0
-      Sampling table 21x1001; from 1 GeV to 100 TeV 
+      Sampling table 21x1001; from 0.85 GeV to 100 TeV 
       ===== EM models for the G4Region  DefaultRegionForTheWorld ======
           muPairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
 
@@ -1169,14 +422,13 @@ msc:  for mu-  SubType= 10
         WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
           StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llim=1 mm
 
-muIoni:  for mu-  XStype:1  SubType=2
+muIoni:  for mu-  XStype:3  SubType=2
       dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
       Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
-      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      StepFunction=(0.2, 0.1 mm), integ: 3, fluct: 1, linLossLim= 0.01
       ===== EM models for the G4Region  DefaultRegionForTheWorld ======
             ICRU73QO : Emin=    0 eV  Emax=  200 keV
-          BetheBloch : Emin=  200 keV Emax=    1 GeV
-        MuBetheBloch : Emin=    1 GeV Emax=  100 TeV
+        MuBetheBloch : Emin=  200 keV Emax=  100 TeV
 
 muBrems:  for mu-  XStype:1  SubType=3
       dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
@@ -1187,7 +439,7 @@ muBrems:  for mu-  XStype:1  SubType=3
 muPairProd:  for mu-  XStype:1  SubType=4
       dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
       Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 0
-      Sampling table 21x1001; from 1 GeV to 100 TeV 
+      Sampling table 21x1001; from 0.85 GeV to 100 TeV 
       ===== EM models for the G4Region  DefaultRegionForTheWorld ======
           muPairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
 
@@ -1202,10 +454,10 @@ msc:  for pi+  SubType= 10
         WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
           StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llim=1 mm
 
-hIoni:  for pi+  XStype:1  SubType=2
+hIoni:  for pi+  XStype:3  SubType=2
       dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
       Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
-      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      StepFunction=(0.2, 0.1 mm), integ: 3, fluct: 1, linLossLim= 0.01
       ===== EM models for the G4Region  DefaultRegionForTheWorld ======
                Bragg : Emin=    0 eV  Emax=297.505 keV
           BetheBloch : Emin=297.505 keV Emax=  100 TeV
@@ -1234,10 +486,10 @@ msc:  for pi-  SubType= 10
         WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
           StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llim=1 mm
 
-hIoni:  for pi-  XStype:1  SubType=2
+hIoni:  for pi-  XStype:3  SubType=2
       dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
       Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
-      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      StepFunction=(0.2, 0.1 mm), integ: 3, fluct: 1, linLossLim= 0.01
       ===== EM models for the G4Region  DefaultRegionForTheWorld ======
             ICRU73QO : Emin=    0 eV  Emax=297.505 keV
           BetheBloch : Emin=297.505 keV Emax=  100 TeV
@@ -1271,49 +523,34 @@ CoulombScat:  for pi- XStype:1 SubType=1 BuildTable=1
         Model:             hElasticCHIPS: 0 eV  ---> 100 TeV
      Cr_sctns:        G4NeutronElasticXS: 0 eV  ---> 100 TeV
 
+
   Process: neutronInelastic
         Model:                      QGSP: 12 GeV ---> 100 TeV
         Model:                      FTFP: 3 GeV ---> 25 GeV
-        Model:            BertiniCascade: 0 eV  ---> 6 GeV
+        Model:            Binary Cascade: 0 eV  ---> 6 GeV
      Cr_sctns:      G4NeutronInelasticXS: 0 eV  ---> 100 TeV
+
 
   Process: nCapture
         Model:               nRadCapture: 0 eV  ---> 100 TeV
      Cr_sctns:        G4NeutronCaptureXS: 0 eV  ---> 100 TeV
 
+
   Process: nKiller
 
 ---------------------------------------------------
-                           Hadronic Processes for B-
-
-  Process: hadElastic
-        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
-     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
-
-  Process: B-Inelastic
-        Model:                      QGSP: 12 GeV ---> 100 TeV
-        Model:                      FTFP: 0 eV  ---> 25 GeV
-     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
-
----------------------------------------------------
-                           Hadronic Processes for D-
-
-  Process: hadElastic
-        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
-     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
-
-  Process: D-Inelastic
-        Model:                      QGSP: 12 GeV ---> 100 TeV
-        Model:                      FTFP: 0 eV  ---> 25 GeV
-     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
-
----------------------------------------------------
                            Hadronic Processes for GenericIon
+
+  Process: ionElastic
+        Model:          NNDiffuseElastic: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
 
   Process: ionInelastic
         Model:  Binary Light Ion Cascade: 0 eV /n ---> 6 GeV/n
         Model:                      FTFP: 3 GeV/n ---> 100 TeV/n
      Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
 
 ---------------------------------------------------
                            Hadronic Processes for He3
@@ -1322,10 +559,12 @@ CoulombScat:  for pi- XStype:1 SubType=1 BuildTable=1
         Model:              hElasticLHEP: 0 eV /n ---> 100 TeV/n
      Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
 
+
   Process: He3Inelastic
         Model:  Binary Light Ion Cascade: 0 eV /n ---> 6 GeV/n
         Model:                      FTFP: 3 GeV/n ---> 100 TeV/n
      Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
 
 ---------------------------------------------------
                            Hadronic Processes for alpha
@@ -1334,10 +573,12 @@ CoulombScat:  for pi- XStype:1 SubType=1 BuildTable=1
         Model:              hElasticLHEP: 0 eV /n ---> 100 TeV/n
      Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
 
+
   Process: alphaInelastic
         Model:  Binary Light Ion Cascade: 0 eV /n ---> 6 GeV/n
         Model:                      FTFP: 3 GeV/n ---> 100 TeV/n
      Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
 
 ---------------------------------------------------
                            Hadronic Processes for anti_He3
@@ -1347,9 +588,11 @@ CoulombScat:  for pi- XStype:1 SubType=1 BuildTable=1
         Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
      Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
 
+
   Process: anti_He3Inelastic
         Model:                      FTFP: 0 eV /n ---> 100 TeV/n
      Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
 
   Process: hFritiofCaptureAtRest
 
@@ -1361,9 +604,11 @@ CoulombScat:  for pi- XStype:1 SubType=1 BuildTable=1
         Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
      Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
 
+
   Process: anti_alphaInelastic
         Model:                      FTFP: 0 eV /n ---> 100 TeV/n
      Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
 
   Process: hFritiofCaptureAtRest
 
@@ -1375,9 +620,16 @@ CoulombScat:  for pi- XStype:1 SubType=1 BuildTable=1
         Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
      Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
 
+
   Process: anti_deuteronInelastic
         Model:                      FTFP: 0 eV /n ---> 100 TeV/n
      Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for anti_hypertriton
 
   Process: hFritiofCaptureAtRest
 
@@ -1388,10 +640,12 @@ CoulombScat:  for pi- XStype:1 SubType=1 BuildTable=1
         Model:              hElasticLHEP: 0 eV  ---> 100 TeV
      Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
 
+
   Process: anti_lambdaInelastic
         Model:                      QGSP: 12 GeV ---> 100 TeV
         Model:                      FTFP: 0 eV  ---> 25 GeV
      Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
 
   Process: hFritiofCaptureAtRest
 
@@ -1403,9 +657,11 @@ CoulombScat:  for pi- XStype:1 SubType=1 BuildTable=1
         Model:              AntiAElastic: 100 MeV ---> 100 TeV
      Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
 
+
   Process: anti_neutronInelastic
         Model:                      FTFP: 0 eV  ---> 100 TeV
      Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
 
   Process: hFritiofCaptureAtRest
 
@@ -1417,9 +673,11 @@ CoulombScat:  for pi- XStype:1 SubType=1 BuildTable=1
         Model:              AntiAElastic: 100 MeV ---> 100 TeV
      Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
 
+
   Process: anti_protonInelastic
         Model:                      FTFP: 0 eV  ---> 100 TeV
      Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
 
   Process: hFritiofCaptureAtRest
 
@@ -1431,9 +689,11 @@ CoulombScat:  for pi- XStype:1 SubType=1 BuildTable=1
         Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
      Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
 
+
   Process: anti_tritonInelastic
         Model:                      FTFP: 0 eV /n ---> 100 TeV/n
      Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
 
   Process: hFritiofCaptureAtRest
 
@@ -1444,10 +704,12 @@ CoulombScat:  for pi- XStype:1 SubType=1 BuildTable=1
         Model:              hElasticLHEP: 0 eV /n ---> 100 TeV/n
      Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
 
+
   Process: dInelastic
         Model:  Binary Light Ion Cascade: 0 eV /n ---> 6 GeV/n
         Model:                      FTFP: 3 GeV/n ---> 100 TeV/n
      Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
 
 ---------------------------------------------------
                            Hadronic Processes for e+
@@ -1456,12 +718,14 @@ CoulombScat:  for pi- XStype:1 SubType=1 BuildTable=1
         Model:   G4ElectroVDNuclearModel: 0 eV  ---> 1 PeV
      Cr_sctns:          ElectroNuclearXS: 0 eV  ---> 100 TeV
 
+
 ---------------------------------------------------
                            Hadronic Processes for e-
 
   Process: electronNuclear
         Model:   G4ElectroVDNuclearModel: 0 eV  ---> 1 PeV
      Cr_sctns:          ElectroNuclearXS: 0 eV  ---> 100 TeV
+
 
 ---------------------------------------------------
                            Hadronic Processes for gamma
@@ -1472,6 +736,7 @@ CoulombScat:  for pi- XStype:1 SubType=1 BuildTable=1
         Model:           TheoFSGenerator: 3 GeV ---> 100 TeV
      Cr_sctns:            GammaNuclearXS: 0 eV  ---> 100 TeV
 
+
 ---------------------------------------------------
                            Hadronic Processes for kaon+
 
@@ -1479,11 +744,13 @@ CoulombScat:  for pi- XStype:1 SubType=1 BuildTable=1
         Model:              hElasticLHEP: 0 eV  ---> 100 TeV
      Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
 
+
   Process: kaon+Inelastic
         Model:                      QGSP: 12 GeV ---> 100 TeV
         Model:                      FTFP: 3 GeV ---> 25 GeV
         Model:            BertiniCascade: 0 eV  ---> 6 GeV
      Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
 
 ---------------------------------------------------
                            Hadronic Processes for kaon-
@@ -1492,11 +759,13 @@ CoulombScat:  for pi- XStype:1 SubType=1 BuildTable=1
         Model:              hElasticLHEP: 0 eV  ---> 100 TeV
      Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
 
+
   Process: kaon-Inelastic
         Model:                      QGSP: 12 GeV ---> 100 TeV
         Model:                      FTFP: 3 GeV ---> 25 GeV
         Model:            BertiniCascade: 0 eV  ---> 6 GeV
      Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
 
   Process: hBertiniCaptureAtRest
 
@@ -1507,11 +776,13 @@ CoulombScat:  for pi- XStype:1 SubType=1 BuildTable=1
         Model:              hElasticLHEP: 0 eV  ---> 100 TeV
      Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
 
+
   Process: lambdaInelastic
         Model:                      QGSP: 12 GeV ---> 100 TeV
         Model:                      FTFP: 3 GeV ---> 25 GeV
         Model:            BertiniCascade: 0 eV  ---> 6 GeV
      Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
 
 ---------------------------------------------------
                            Hadronic Processes for mu+
@@ -1520,12 +791,14 @@ CoulombScat:  for pi- XStype:1 SubType=1 BuildTable=1
         Model:      G4MuonVDNuclearModel: 0 eV  ---> 1 PeV
      Cr_sctns:     KokoulinMuonNuclearXS: 0 eV  ---> 100 TeV
 
+
 ---------------------------------------------------
                            Hadronic Processes for mu-
 
   Process: muonNuclear
         Model:      G4MuonVDNuclearModel: 0 eV  ---> 1 PeV
      Cr_sctns:     KokoulinMuonNuclearXS: 0 eV  ---> 100 TeV
+
 
   Process: muMinusCaptureAtRest
 
@@ -1536,11 +809,13 @@ CoulombScat:  for pi- XStype:1 SubType=1 BuildTable=1
         Model:           hElasticGlauber: 0 eV  ---> 100 TeV
      Cr_sctns:  BarashenkovGlauberGribov: 0 eV  ---> 100 TeV
 
+
   Process: pi+Inelastic
         Model:                      QGSP: 12 GeV ---> 100 TeV
         Model:                      FTFP: 3 GeV ---> 25 GeV
         Model:            BertiniCascade: 0 eV  ---> 6 GeV
      Cr_sctns:  BarashenkovGlauberGribov: 0 eV  ---> 100 TeV
+
 
 ---------------------------------------------------
                            Hadronic Processes for pi-
@@ -1549,11 +824,13 @@ CoulombScat:  for pi- XStype:1 SubType=1 BuildTable=1
         Model:           hElasticGlauber: 0 eV  ---> 100 TeV
      Cr_sctns:  BarashenkovGlauberGribov: 0 eV  ---> 100 TeV
 
+
   Process: pi-Inelastic
         Model:                      QGSP: 12 GeV ---> 100 TeV
         Model:                      FTFP: 3 GeV ---> 25 GeV
         Model:            BertiniCascade: 0 eV  ---> 6 GeV
      Cr_sctns:  BarashenkovGlauberGribov: 0 eV  ---> 100 TeV
+
 
   Process: hBertiniCaptureAtRest
 
@@ -1564,11 +841,13 @@ CoulombScat:  for pi- XStype:1 SubType=1 BuildTable=1
         Model:             hElasticCHIPS: 0 eV  ---> 100 TeV
      Cr_sctns:  BarashenkovGlauberGribov: 0 eV  ---> 100 TeV
 
+
   Process: protonInelastic
         Model:                      QGSP: 12 GeV ---> 100 TeV
         Model:                      FTFP: 3 GeV ---> 25 GeV
-        Model:            BertiniCascade: 0 eV  ---> 6 GeV
+        Model:            Binary Cascade: 0 eV  ---> 6 GeV
      Cr_sctns:  BarashenkovGlauberGribov: 0 eV  ---> 100 TeV
+
 
 ---------------------------------------------------
                            Hadronic Processes for sigma-
@@ -1577,11 +856,13 @@ CoulombScat:  for pi- XStype:1 SubType=1 BuildTable=1
         Model:              hElasticLHEP: 0 eV  ---> 100 TeV
      Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
 
+
   Process: sigma-Inelastic
         Model:                      QGSP: 12 GeV ---> 100 TeV
         Model:                      FTFP: 3 GeV ---> 25 GeV
         Model:            BertiniCascade: 0 eV  ---> 6 GeV
      Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
 
   Process: hBertiniCaptureAtRest
 
@@ -1592,10 +873,12 @@ CoulombScat:  for pi- XStype:1 SubType=1 BuildTable=1
         Model:              hElasticLHEP: 0 eV /n ---> 100 TeV/n
      Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
 
+
   Process: tInelastic
         Model:  Binary Light Ion Cascade: 0 eV /n ---> 6 GeV/n
         Model:                      FTFP: 3 GeV/n ---> 100 TeV/n
      Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
 
 ================================================================
 =======================================================================
@@ -1603,18 +886,18 @@ CoulombScat:  for pi- XStype:1 SubType=1 BuildTable=1
 =======================================================================
 Type of pre-compound inverse x-section              3
 Pre-compound model active                           1
-Pre-compound excitation low energy (MeV)            0.1
-Pre-compound excitation high energy (MeV)           30
+Pre-compound excitation low energy                  100 keV
+Pre-compound excitation high energy                 30 MeV
 Type of de-excitation inverse x-section             3
 Type of de-excitation factory                       Evaporation+GEM
 Number of de-excitation channels                    68
-Min excitation energy (keV)                         0.01
-Min energy per nucleon for multifragmentation (MeV) 2e+05
-Limit excitation energy for Fermi BreakUp (MeV)     20
+Min excitation energy                               10 eV 
+Min energy per nucleon for multifragmentation       200 GeV
+Limit excitation energy for Fermi BreakUp           20 MeV
 Level density (1/MeV)                               0.075
 Use simple level density model                      1
-Use discrete excitation energy of the residual      0
-Time limit for long lived isomeres (ns)             1
+Use discrete excitation energy of the residual      1
+Time limit for long lived isomeres                  1 ns 
 Isomer production flag                              1
 Internal e- conversion flag                         1
 Store e- internal conversion data                   0
@@ -1633,10 +916,11 @@ Registered graphics systems are:
   RayTracer (RayTracer)
   VRML2FILE (VRML2FILE)
   gMocrenFile (gMocrenFile)
+  TOOLSSG_OFFSCREEN (TSG_OFFSCREEN)
+  TOOLSSG_OFFSCREEN (TSG_OFFSCREEN, TSG_FILE)
   OpenGLImmediateQt (OGLIQt, OGLI)
   OpenGLStoredQt (OGLSQt, OGL, OGLS)
-  OpenGLImmediateX (OGLIX, OGLIQt_FALLBACK)
-  OpenGLStoredX (OGLSX, OGLSQt_FALLBACK)
+  TOOLSSG_QT_GLES (TSG_QT_GLES, TSGQt, TSG)
 
 Registering model factories...
 
@@ -1671,16 +955,9 @@ Some /vis commands (optionally) take a string to specify colour.
 "/vis/list" to see available colours.
 G4VisManager: Using G4TrajectoryDrawByCharge as fallback trajectory model.
 See commands in /vis/modeling/trajectories/ for other options.
-G4WT1 > ... create file : outputdata_t1.root - done
-G4WT1 > ... open analysis file : outputdata_t1.root - done
 G4WT0 > ... create file : outputdata_t0.root - done
 G4WT0 > ... open analysis file : outputdata_t0.root - done
 G4WT0 > ... write file : outputdata_t0.root - done
 G4WT0 > ... close file : outputdata_t0.root - done
-G4WT1 > ... write file : outputdata_t1.root - done
-G4WT1 > ... close file : outputdata_t1.root - done
-0 events have been kept for refreshing and/or reviewing.
-  "/vis/reviewKeptEvents" to review them one by one.
-  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
 Graphics systems deleted.
 Visualization Manager deleting...

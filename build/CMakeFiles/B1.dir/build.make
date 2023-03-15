@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zhu/G4/geant4-install/share/Geant4-11.0.1/examples/basic/B1
+CMAKE_SOURCE_DIR = /home/zhuhf/geant4/geant4-install/share/Geant4/examples/basic/B1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zhu/G4/geant4-install/share/Geant4-11.0.1/examples/basic/B1/build
+CMAKE_BINARY_DIR = /home/zhuhf/geant4/geant4-install/share/Geant4/examples/basic/B1/build
 
 # Utility rule file for B1.
 
@@ -71,6 +71,6 @@ CMakeFiles/B1.dir/clean:
 .PHONY : CMakeFiles/B1.dir/clean
 
 CMakeFiles/B1.dir/depend:
-	cd /home/zhu/G4/geant4-install/share/Geant4-11.0.1/examples/basic/B1/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zhu/G4/geant4-install/share/Geant4-11.0.1/examples/basic/B1 /home/zhu/G4/geant4-install/share/Geant4-11.0.1/examples/basic/B1 /home/zhu/G4/geant4-install/share/Geant4-11.0.1/examples/basic/B1/build /home/zhu/G4/geant4-install/share/Geant4-11.0.1/examples/basic/B1/build /home/zhu/G4/geant4-install/share/Geant4-11.0.1/examples/basic/B1/build/CMakeFiles/B1.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/zhuhf/geant4/geant4-install/share/Geant4/examples/basic/B1/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zhuhf/geant4/geant4-install/share/Geant4/examples/basic/B1 /home/zhuhf/geant4/geant4-install/share/Geant4/examples/basic/B1 /home/zhuhf/geant4/geant4-install/share/Geant4/examples/basic/B1/build /home/zhuhf/geant4/geant4-install/share/Geant4/examples/basic/B1/build /home/zhuhf/geant4/geant4-install/share/Geant4/examples/basic/B1/build/CMakeFiles/B1.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/B1.dir/depend
 
