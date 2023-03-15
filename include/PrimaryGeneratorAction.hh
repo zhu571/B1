@@ -77,6 +77,13 @@ class PrimaryGeneratorAction : public G4VUserPrimaryGeneratorAction
   // user define
   private:
   G4ParticleGun* particleGun;//继承G4VPrimaryGenerator
+
+  TFile *filer;
+  TH1I *h1;
+  TH2I *h2;
+  TH2I *h3;
+
+
 /*
     // method from the base class
     void GeneratePrimaries(G4Event*) override;

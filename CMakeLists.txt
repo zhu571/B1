@@ -30,6 +30,11 @@ endif()
 #
 include(${Geant4_USE_FILE})
 include_directories(${PROJECT_SOURCE_DIR}/include ${Geant4_INCLUDE_DIR} ${ROOT_INCLUDE_DIRS})
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> a5ec991fd00c2f592556d739c4ce09eb32c03836
 
 #----------------------------------------------------------------------------
 # Locate sources and headers for this project

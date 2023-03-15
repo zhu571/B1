@@ -241,7 +241,7 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
   G4double dssdX = 5.0*cm;
   G4double dssdY = 5.0*cm;
   G4double dssd1Z = 142.0*um;
-  G4double dssd2Z = 40.0*um;
+  G4double dssd2Z = 300.0*um;
   G4double dssd3Z = 304.0*um;
   G4double dssddx = 3.125*mm;
   G4double dssddy = 3.125*mm;
@@ -265,21 +265,67 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
                       0,
                       checkOverlaps);
 
-  char dssd1name[200];
+  //char dssd1name[200];
   char dssd2name[200];
+<<<<<<< HEAD
   char dssd3xname[200];
   char dssd3yname[200];
+=======
+<<<<<<< HEAD
+  //char dssd3name[200];
+=======
+  char dssd3name[200];
+>>>>>>> a5ec991fd00c2f592556d739c4ce09eb32c03836
+>>>>>>> c5b570b4414ab164a6487ce5acbe54ece2cb06c6
 /*
   G4Box* solidDSSD1 =    
     new G4Box("DSSD1",                    //its name
   	      0.5*dssddx, 0.5*dssddy, 0.5*dssd1Z); //its size
+<<<<<<< HEAD
+*/
 
+=======
+
+<<<<<<< HEAD
 
   
   G4Box* solidDSSD2 =    
     new G4Box("DSSD2",                    //its name
   	      0.5*dssddx, 0.5*dssddy, 0.5*dssd2Z); //its size
 
+=======
+*/
+  /*
+>>>>>>> a5ec991fd00c2f592556d739c4ce09eb32c03836
+  G4Box* solidDSSD2 =    
+    new G4Box("DSSD2",                    //its name
+  	      0.5*dssddx, 0.5*dssddy, 0.5*dssd2Z); //its size
+<<<<<<< HEAD
+
+/*
+=======
+*/
+
+>>>>>>> a5ec991fd00c2f592556d739c4ce09eb32c03836
+  G4Box* solidDSSD3 =    
+    new G4Box("DSSD3",                    //its name
+  	      0.5*dssddx, 0.5*dssddy, 0.5*dssd3Z); //its size
+*/
+ /* logicDSSD =
+    new G4LogicalVolume(solidDSSD,            //its solid
+			dssd_mat,             //its material
+			"DSSD");         //its name
+
+  physDSSD =
+    new G4PVPlacement(0,                       //no rotation set 0
+		      G4ThreeVector(), //at (0,0,0)
+		      logicDSSD,               //its logical volume
+		      "DSSD",              //its name
+		      logicWorld,              //its mother  volume
+		      false,                   //no boolean operation
+		      0,                       //copy number
+		      checkOverlaps);          //overlaps checking
+>>>>>>> c5b570b4414ab164a6487ce5acbe54ece2cb06c6
 */
   G4Box* solidDSSD3x =    
     new G4Box("DSSD3",                    //its name
@@ -312,6 +358,7 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
                       checkOverlaps);
   }
 }
+/*
   for (size_t l = 0; l < 16; l++)
 {
   for (size_t m = 0; m < 16; m++)
@@ -382,6 +429,7 @@ for (int i = 0; i < 16; i++) {
                     0,
                     checkOverlaps);
 }
+<<<<<<< HEAD
 
 for (int j = 0; j < 16; j++) {
   int num3y = j;
@@ -402,6 +450,9 @@ for (int j = 0; j < 16; j++) {
                     0,
                     checkOverlaps);
 }
+=======
+*/
+>>>>>>> c5b570b4414ab164a6487ce5acbe54ece2cb06c6
 
  /* logicDSSD =
     new G4LogicalVolume(solidDSSD,            //its solid
