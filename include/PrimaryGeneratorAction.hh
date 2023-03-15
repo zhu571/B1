@@ -41,6 +41,10 @@
 #include "G4ParticleDefinition.hh"
 #include "G4ParticleMomentum.hh"
 #include "G4ThreeVector.hh"
+
+#include "TFile.h"
+#include "TH1.h"
+#include "TH2.h"
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 class G4ParticleGun;
@@ -85,6 +89,11 @@ class PrimaryGeneratorAction : public G4VUserPrimaryGeneratorAction
     G4ParticleGun* fParticleGun = nullptr; // pointer a to G4 gun class
     G4Box* fEnvelopeBox = nullptr;
     */
+
+  TFile *filer;
+  TH1F *h1;
+  TH1F *h2;
+  TH1F *h3;
 
 };
 
