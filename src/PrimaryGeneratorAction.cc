@@ -96,7 +96,7 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
   // particleGun->SetParticleCharge(IonQ);
 
   //Geant4已经定义的粒子
-  pp = particleTable->FindParticle("alpha");
+  pp = particleTable->FindParticle("proton");
 
   // -------------------------
   
@@ -116,197 +116,197 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
 
 /////////////////Al22_SE///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   
-/*
-  G4double Ed =  4.464*MeV;//4464
-  G4double Ep1 = 2.354*MeV;
-  G4double Ep2 = 2.11*MeV;
 
-  //G4double Ed =  6.085*MeV;//6085
-  //G4double Ep1 = 2.747*MeV;
-  //G4double Ep2 = 3.338*MeV;
+//   G4double Ed =  4.464*MeV;//4464
+//   G4double Ep1 = 2.354*MeV;
+//   G4double Ep2 = 2.11*MeV;
 
-
-  G4double E1 = 0;
-  G4double E2 = 0;
-  G4double E3 = 0;
+//   //G4double Ed =  6.085*MeV;//6085
+//   //G4double Ep1 = 2.747*MeV;
+//   //G4double Ep2 = 3.338*MeV;
 
 
-  G4double E2V_p1 = 1.3516981e7;
-  G4double E2V_p2 = 1.3501479e7;
-  G4double E2V_Na = 6.8010636e5;
-  G4double E2V_Mg = 6.4834107e5;
+//   G4double E1 = 0;
+//   G4double E2 = 0;
+//   G4double E3 = 0;
 
 
-  G4double v23 = std::sqrt(Ep1)*E2V_Mg;
-  G4double v2c = std::sqrt(Ep2)*E2V_p2;
-  G4double v3c = std::sqrt(Ep2)*E2V_Na;
-  G4double v1l = std::sqrt(Ep1)*E2V_p1;
+//   G4double E2V_p1 = 1.3516981e7;
+//   G4double E2V_p2 = 1.3501479e7;
+//   G4double E2V_Na = 6.8010636e5;
+//   G4double E2V_Mg = 6.4834107e5;
+
+
+//   G4double v23 = std::sqrt(Ep1)*E2V_Mg;
+//   G4double v2c = std::sqrt(Ep2)*E2V_p2;
+//   G4double v3c = std::sqrt(Ep2)*E2V_Na;
+//   G4double v1l = std::sqrt(Ep1)*E2V_p1;
 
   
-  //primary particle kinetic energy
- // particleGun->SetParticleEnergy(Ep1);
+//   //primary particle kinetic energy
+//  // particleGun->SetParticleEnergy(Ep1);
 
-  G4double px = 0;
-  G4double py = 0;
-  G4double pz = 0;
+//   G4double px = 0;
+//   G4double py = 0;
+//   G4double pz = 0;
 
-  G4double abspx = 0;
-  G4double abspy = 0;
-  G4double abspz = 0;
+//   G4double abspx = 0;
+//   G4double abspy = 0;
+//   G4double abspz = 0;
 
-  G4double totalenergy = 0;
+//   G4double totalenergy = 0;
 
-  G4double ratio = 1.000e-3;
-
-
-  G4double cosPX1 = 0;
-  G4double cosPY1 = 0;
-  G4double cosPZ1 = 0;
-
-  G4double cosPX2l = 0;
-  G4double cosPY2l = 0;
-  G4double cosPZ2l = 0;
+//   G4double ratio = 1.000e-3;
 
 
-  G4double cosPX2 = 0;
-  G4double cosPY2 = 0;
-  G4double cosPZ2 = 0;
+//   G4double cosPX1 = 0;
+//   G4double cosPY1 = 0;
+//   G4double cosPZ1 = 0;
+
+//   G4double cosPX2l = 0;
+//   G4double cosPY2l = 0;
+//   G4double cosPZ2l = 0;
+
+
+//   G4double cosPX2 = 0;
+//   G4double cosPY2 = 0;
+//   G4double cosPZ2 = 0;
 
 
 
 
-  // primary particle position
-  G4double x1 = 0.;
-  G4double y1 = 0.;
-  G4double z1 = 0.;
- // particleGun->SetParticlePosition(G4ThreeVector(x1, y1, z1));
+//   // primary particle position
+//   G4double x1 = 0.;
+//   G4double y1 = 0.;
+//   G4double z1 = 0.;
+//  // particleGun->SetParticlePosition(G4ThreeVector(x1, y1, z1));
 
-  G4ThreeVector pos(x1,y1,z1);
+//   G4ThreeVector pos(x1,y1,z1);
 
-  do{
-
-
-  // primary particle moving direction
-  G4double theta1= acos((G4UniformRand()-0.5)*2);
-  G4double phi1 = G4UniformRand()*2.0*pi;
-  cosPX1 = sin(theta1)*cos(phi1);
-  cosPY1 = sin(theta1)*sin(phi1);
-  cosPZ1 = cos(theta1);
-  //G4ThreeVector directPri1(cosPX1, cosPY1, cosPZ1);  
+//   do{
 
 
-  G4double cosPX3 = - cosPX1;
-  G4double cosPY3 = - cosPY1; 
-  G4double cosPZ3 = - cosPZ1; 
-  G4double theta2= acos((G4UniformRand()-0.5)*2);
-  G4double phi2 = G4UniformRand()*2.0*pi;
-   cosPX2 = sin(theta2)*cos(phi2);
-   cosPY2 = sin(theta2)*sin(phi2);
-   cosPZ2 = cos(theta2);
-  //G4ThreeVector directPri2(cosPX2, cosPY2, cosPZ2);
-
-  G4double cosPX4 = - cosPX2;
-  G4double cosPY4 = - cosPY2;
-  G4double cosPZ4 = - cosPZ2;
+//   // primary particle moving direction
+//   G4double theta1= acos((G4UniformRand()-0.5)*2);
+//   G4double phi1 = G4UniformRand()*2.0*pi;
+//   cosPX1 = sin(theta1)*cos(phi1);
+//   cosPY1 = sin(theta1)*sin(phi1);
+//   cosPZ1 = cos(theta1);
+//   //G4ThreeVector directPri1(cosPX1, cosPY1, cosPZ1);  
 
 
-  //速度合成
-  G4double v1lx = v1l * cosPX1;
-  G4double v1ly = v1l * cosPY1;
-  G4double v1lz = v1l * cosPZ1;
+//   G4double cosPX3 = - cosPX1;
+//   G4double cosPY3 = - cosPY1; 
+//   G4double cosPZ3 = - cosPZ1; 
+//   G4double theta2= acos((G4UniformRand()-0.5)*2);
+//   G4double phi2 = G4UniformRand()*2.0*pi;
+//    cosPX2 = sin(theta2)*cos(phi2);
+//    cosPY2 = sin(theta2)*sin(phi2);
+//    cosPZ2 = cos(theta2);
+//   //G4ThreeVector directPri2(cosPX2, cosPY2, cosPZ2);
+
+//   G4double cosPX4 = - cosPX2;
+//   G4double cosPY4 = - cosPY2;
+//   G4double cosPZ4 = - cosPZ2;
+
+
+//   //速度合成
+//   G4double v1lx = v1l * cosPX1;
+//   G4double v1ly = v1l * cosPY1;
+//   G4double v1lz = v1l * cosPZ1;
  
-  G4double v23x = v23*cosPX3;
-  G4double v23y = v23*cosPY3;
-  G4double v23z = v23*cosPZ3;
+//   G4double v23x = v23*cosPX3;
+//   G4double v23y = v23*cosPY3;
+//   G4double v23z = v23*cosPZ3;
 
-  G4double v2x = v2c*cosPX2;
-  G4double v2y = v2c*cosPY2;
-  G4double v2z = v2c*cosPZ2;
+//   G4double v2x = v2c*cosPX2;
+//   G4double v2y = v2c*cosPY2;
+//   G4double v2z = v2c*cosPZ2;
 
-  G4double v3cx = v3c * cosPX4;
-  G4double v3cy = v3c * cosPY4;
-  G4double v3cz = v3c * cosPZ4;
+//   G4double v3cx = v3c * cosPX4;
+//   G4double v3cy = v3c * cosPY4;
+//   G4double v3cz = v3c * cosPZ4;
 
-  G4double v3lx = v3cx + v23x;
-  G4double v3ly = v3cy + v23y;
-  G4double v3lz = v3cz + v23z;
+//   G4double v3lx = v3cx + v23x;
+//   G4double v3ly = v3cy + v23y;
+//   G4double v3lz = v3cz + v23z;
 
-  G4double v2xl = v23x +v2x;
-  G4double v2yl = v23y +v2y;
-  G4double v2zl = v23z +v2z;
+//   G4double v2xl = v23x +v2x;
+//   G4double v2yl = v23y +v2y;
+//   G4double v2zl = v23z +v2z;
 
-  E1 = 0.5 * mp *(v1lx * v1lx + v1ly * v1ly + v1lz * v1lz)/(1.6021766e-13)*MeV;
-  E2 = 0.5 * mp * (v2xl * v2xl + v2yl * v2yl + v2zl * v2zl)/(1.6021766e-13)*MeV;
-  E3 = 0.5 * m20Na * (v3lx * v3lx + v3ly * v3ly + v3lz * v3lz)/(1.6021766e-13)*MeV;
+//   E1 = 0.5 * mp *(v1lx * v1lx + v1ly * v1ly + v1lz * v1lz)/(1.6021766e-13)*MeV;
+//   E2 = 0.5 * mp * (v2xl * v2xl + v2yl * v2yl + v2zl * v2zl)/(1.6021766e-13)*MeV;
+//   E3 = 0.5 * m20Na * (v3lx * v3lx + v3ly * v3ly + v3lz * v3lz)/(1.6021766e-13)*MeV;
 
-  totalenergy = E1 + E2 + E3;
+//   totalenergy = E1 + E2 + E3;
 
-  px = v1lx * mp + v2xl * mp + v3lx * m20Na;
-  py = v1ly * mp + v2yl * mp + v3ly * m20Na;
-  pz = v1lz * mp + v2zl * mp + v3lz * m20Na;
+//   px = v1lx * mp + v2xl * mp + v3lx * m20Na;
+//   py = v1ly * mp + v2yl * mp + v3ly * m20Na;
+//   pz = v1lz * mp + v2zl * mp + v3lz * m20Na;
 
-  abspx = abs(v1lx * mp) + abs(v2xl * mp) + abs(v3lx * m20Na);
-  abspy = abs(v1ly * mp) + abs(v2yl * mp) + abs(v3ly * m20Na);
-  abspz = abs(v1lz * mp) + abs(v2zl * mp) + abs(v3lz * m20Na);
-
-
+//   abspx = abs(v1lx * mp) + abs(v2xl * mp) + abs(v3lx * m20Na);
+//   abspy = abs(v1ly * mp) + abs(v2yl * mp) + abs(v3ly * m20Na);
+//   abspz = abs(v1lz * mp) + abs(v2zl * mp) + abs(v3lz * m20Na);
 
 
-  cosPX2l = v2xl/std::sqrt(v2xl*v2xl+v2yl*v2yl+v2zl*v2zl);
-  cosPY2l = v2yl/std::sqrt(v2xl*v2xl+v2yl*v2yl+v2zl*v2zl);
-  cosPZ2l = v2zl/std::sqrt(v2xl*v2xl+v2yl*v2yl+v2zl*v2zl);
+
+
+//   cosPX2l = v2xl/std::sqrt(v2xl*v2xl+v2yl*v2yl+v2zl*v2zl);
+//   cosPY2l = v2yl/std::sqrt(v2xl*v2xl+v2yl*v2yl+v2zl*v2zl);
+//   cosPZ2l = v2zl/std::sqrt(v2xl*v2xl+v2yl*v2yl+v2zl*v2zl);
   
-  //G4ThreeVector directPri2(cosPX2l,cosPY2l,cosPZ2l);
+//   //G4ThreeVector directPri2(cosPX2l,cosPY2l,cosPZ2l);
 
- // G4cout<<"totalenergy == "<<totalenergy<<G4endl;
-  //particleGun->SetParticleMomentumDirection(directPri1);
+//  // G4cout<<"totalenergy == "<<totalenergy<<G4endl;
+//   //particleGun->SetParticleMomentumDirection(directPri1);
 
-  //这个调用一次设置一次粒子，一次模拟要同时发射多个不同粒子就得多次调用它
- // particleGun->GeneratePrimaryVertex(anEvent);
+//   //这个调用一次设置一次粒子，一次模拟要同时发射多个不同粒子就得多次调用它
+//  // particleGun->GeneratePrimaryVertex(anEvent);
 
- // particleGun->SetParticleEnergy(Ep2);
+//  // particleGun->SetParticleEnergy(Ep2);
 
   
-  // primary particle position
-  //G4double x2 = 0.;
-  //G4double y2 = 0.;
-  //G4double z2 = 0.;
-  //particleGun->SetParticlePosition(G4ThreeVector(x1, y1, z1));
+//   // primary particle position
+//   //G4double x2 = 0.;
+//   //G4double y2 = 0.;
+//   //G4double z2 = 0.;
+//   //particleGun->SetParticlePosition(G4ThreeVector(x1, y1, z1));
 
 
-  // primary particle moving direction
+//   // primary particle moving direction
 
-}while(abs(totalenergy - Ed)/Ed>ratio || abs(px)/abspx>ratio || abs(py)/abspy>ratio || abs(pz)/abspz>ratio);
-
-
-particleGun->SetParticleEnergy(E1);
-particleGun->SetParticlePosition(pos);
-G4ThreeVector directPri1(cosPX1, cosPY1, cosPZ1);
-particleGun->SetParticleMomentumDirection(directPri1);
-particleGun->GeneratePrimaryVertex(anEvent);
+// }while(abs(totalenergy - Ed)/Ed>ratio || abs(px)/abspx>ratio || abs(py)/abspy>ratio || abs(pz)/abspz>ratio);
 
 
-particleGun->SetParticleEnergy(E2);
-particleGun->SetParticlePosition(pos);
-G4ThreeVector directPri2(cosPX2l,cosPY2l,cosPZ2l);
-particleGun->SetParticleMomentumDirection(directPri2);
-particleGun->GeneratePrimaryVertex(anEvent);
+// particleGun->SetParticleEnergy(E1);
+// particleGun->SetParticlePosition(pos);
+// G4ThreeVector directPri1(cosPX1, cosPY1, cosPZ1);
+// particleGun->SetParticleMomentumDirection(directPri1);
+// particleGun->GeneratePrimaryVertex(anEvent);
 
-//  G4ThreeVector directPri2(v2xl,v2yl,v2zl);
-  ///particle
-  //particleGun->SetParticleMomentumDirection(directPri2);
 
-  //这个调用一次设置一次粒子，一次模拟要同时发射多个不同粒子就得多次调用它
-  //particleGun->GeneratePrimaryVertex(anEvent);
+// particleGun->SetParticleEnergy(E2);
+// particleGun->SetParticlePosition(pos);
+// G4ThreeVector directPri2(cosPX2l,cosPY2l,cosPZ2l);
+// particleGun->SetParticleMomentumDirection(directPri2);
+// particleGun->GeneratePrimaryVertex(anEvent);
 
-*/
+// //  G4ThreeVector directPri2(v2xl,v2yl,v2zl);
+//   ///particle
+//   //particleGun->SetParticleMomentumDirection(directPri2);
+
+//   //这个调用一次设置一次粒子，一次模拟要同时发射多个不同粒子就得多次调用它
+//   //particleGun->GeneratePrimaryVertex(anEvent);
+
+
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Al22_SE////////////////////////////////////////////////////////////////////////////////////////
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////Al22_2He//////////////////////////////////////////////////////////////////////////////////////
 
 
-  /*
+  
   G4double pi = 3.1415926;
   G4double U1=0;
   G4double U2=0;
@@ -316,7 +316,7 @@ particleGun->GeneratePrimaryVertex(anEvent);
   G4double E2V = 9.7844874e6;
   G4double E2V12L = 9.3259832e6;
   G4double E2V3L = 9.3955044e5;
-  G4double mean_2He = 0.5;
+  G4double mean_2He = 2;
   G4double sigma_2He = 0.25478;
   G4double E1 = 0;
   G4double E2 = 0;
@@ -607,36 +607,36 @@ do{
 
 
 
-  */
+  
 
 ////////////////////////////////////////////////////////////////////////////////////////////Al22_2He//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////beta///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-double depx = h1->GetRandom();
-double depy = h2->GetRandom();
-double depz = h3->GetRandom();
-// G4cout<<"depx="<<depx<<" "<<"depy="<<depy<<" "<<"depz="<<depz<<G4endl;  
+// double depx = h1->GetRandom();
+// double depy = h2->GetRandom();
+// double depz = h3->GetRandom();
+// // G4cout<<"depx="<<depx<<" "<<"depy="<<depy<<" "<<"depz="<<depz<<G4endl;  
 
 
-G4double E_mean = 4.03*MeV;
-G4double E_sigma = 0.05*MeV;
-G4double Ealpha = G4RandGauss::shoot(E_mean,E_sigma);
-G4double x = depx*mm;
-G4double y = depy*mm;
-G4double z = depz*um;
-particleGun->SetParticleEnergy(Ealpha);
-particleGun->SetParticlePosition(G4ThreeVector(x, y, z));
+// G4double E_mean = 4.03*MeV;
+// G4double E_sigma = 0.05*MeV;
+// G4double Ealpha = G4RandGauss::shoot(E_mean,E_sigma);
+// G4double x = depx*mm;
+// G4double y = depy*mm;
+// G4double z = depz*um;
+// particleGun->SetParticleEnergy(Ealpha);
+// particleGun->SetParticlePosition(G4ThreeVector(x, y, z));
 
-G4double theta= acos((G4UniformRand()-0.5)*2);
-G4double phi = G4UniformRand()*2.0*pi;
-G4double cosPX = sin(theta)*cos(phi);
-G4double cosPY = sin(theta)*sin(phi);
-G4double cosPZ = cos(theta);
-G4ThreeVector directPri(cosPX, cosPY, cosPZ);    
-particleGun->SetParticleMomentumDirection(directPri);  
+// G4double theta= acos((G4UniformRand()-0.5)*2);
+// G4double phi = G4UniformRand()*2.0*pi;
+// G4double cosPX = sin(theta)*cos(phi);
+// G4double cosPY = sin(theta)*sin(phi);
+// G4double cosPZ = cos(theta);
+// G4ThreeVector directPri(cosPX, cosPY, cosPZ);    
+// particleGun->SetParticleMomentumDirection(directPri);  
 
-particleGun->GeneratePrimaryVertex(anEvent);
+// particleGun->GeneratePrimaryVertex(anEvent);
 
   
 

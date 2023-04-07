@@ -76,8 +76,10 @@ class DetectorConstruction : public G4VUserDetectorConstruction
     G4LogicalVolume* logicWorld;
     G4VPhysicalVolume* physWorld;
 
-    G4LogicalVolume* logicDSSD1[10000]; 
-    G4LogicalVolume* logicDSSD2[10000]; 
+    G4LogicalVolume* logicDSSD1x[10000]; 
+    G4LogicalVolume* logicDSSD1y[10000]; 
+    G4LogicalVolume* logicDSSD2x[10000];
+    G4LogicalVolume* logicDSSD2y[10000]; 
     G4LogicalVolume* logicDSSD3x[10000];
     G4LogicalVolume* logicDSSD3y[10000];
     G4VPhysicalVolume* physDSSD1[10000];

@@ -265,8 +265,10 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
                       0,
                       checkOverlaps);
 
-  char dssd1name[200];
-  char dssd2name[200];
+  char dssd1xname[200];
+  char dssd1yname[200];
+  char dssd2xname[200];
+  char dssd2yname[200];
   char dssd3xname[200];
   char dssd3yname[200];
 /*
@@ -281,6 +283,23 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
   	      0.5*dssddx, 0.5*dssddy, 0.5*dssd2Z); //its size
 
 */
+  G4Box* solidDSSD1x =    
+    new G4Box("DSSD1",                    //its name
+  	      0.5*dssddx, 0.5*dssdY, 0.25*dssd3Z); //its size
+
+  G4Box* solidDSSD1y =    
+    new G4Box("DSSD1",                    //its name
+  	      0.5*dssdX, 0.5*dssddy, 0.25*dssd3Z);
+
+
+  G4Box* solidDSSD2x =    
+    new G4Box("DSSD2",                    //its name
+  	      0.5*dssddx, 0.5*dssdY, 0.25*dssd3Z); //its size
+
+  G4Box* solidDSSD2y =    
+    new G4Box("DSSD2",                    //its name
+  	      0.5*dssdX, 0.5*dssddy, 0.25*dssd3Z);
+
   G4Box* solidDSSD3x =    
     new G4Box("DSSD3",                    //its name
   	      0.5*dssddx, 0.5*dssdY, 0.25*dssd3Z); //its size
@@ -362,6 +381,89 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
   
 // }
 
+for (int k = 0; k < 16; k++) {
+  int num1x = k;
+  sprintf(dssd1xname,"dssd1x|%d",num1x);
+
+  logicDSSD1x[num1x] = 
+    new G4LogicalVolume(solidDSSD1x,
+                     dssd_mat,
+                     dssd1xname);
+
+  physDSSD2[num1x] = 
+  new G4PVPlacement(0,
+                    G4ThreeVector((24.84375-3.125*k)*mm,0*mm,76*um+19*mm),
+                    logicDSSD1x[num1x],
+                    dssd1xname,
+                    logicWorld,
+                    false,
+                    0,
+                    checkOverlaps);
+}
+
+for (int h = 0; h < 16; h++) {
+  int num1y = h;
+  sprintf(dssd1yname,"dssd1y|%d",num1y);
+
+  logicDSSD2y[num1y] = 
+    new G4LogicalVolume(solidDSSD1y,
+                     dssd_mat,
+                     dssd1yname);
+
+  physDSSD2[num1y] = 
+  new G4PVPlacement(0,
+                    G4ThreeVector(0*mm,(24.84375-3.125*h)*mm,228*um+19*mm),
+                    logicDSSD2y[num1y],
+                    dssd1yname,
+                    logicWorld,
+                    false,
+                    0,
+                    checkOverlaps);
+}
+
+
+
+for (int l = 0; l < 16; l++) {
+  int num2x = l;
+  sprintf(dssd2xname,"dssd2x|%d",num2x);
+
+  logicDSSD2x[num2x] = 
+    new G4LogicalVolume(solidDSSD2x,
+                     dssd_mat,
+                     dssd2xname);
+
+  physDSSD2[num2x] = 
+  new G4PVPlacement(0,
+                    G4ThreeVector((24.84375-3.125*l)*mm,0*mm,76*um),
+                    logicDSSD2x[num2x],
+                    dssd2xname,
+                    logicWorld,
+                    false,
+                    0,
+                    checkOverlaps);
+}
+
+for (int m = 0; m < 16; m++) {
+  int num2y = m;
+  sprintf(dssd2yname,"dssd2y|%d",num2y);
+
+  logicDSSD2y[num2y] = 
+    new G4LogicalVolume(solidDSSD2y,
+                     dssd_mat,
+                     dssd2yname);
+
+  physDSSD2[num2y] = 
+  new G4PVPlacement(0,
+                    G4ThreeVector(0*mm,(24.84375-3.125*m)*mm,228*um),
+                    logicDSSD2y[num2y],
+                    dssd2yname,
+                    logicWorld,
+                    false,
+                    0,
+                    checkOverlaps);
+}
+
+
 
 for (int i = 0; i < 16; i++) {
   int num3x = i;
@@ -374,7 +476,7 @@ for (int i = 0; i < 16; i++) {
 
   physDSSD3[num3x] = 
   new G4PVPlacement(0,
-                    G4ThreeVector((24.84375-3.125*i)*mm,0*mm,76*um),
+                    G4ThreeVector((24.84375-3.125*i)*mm,0*mm,76*um-19*mm),
                     logicDSSD3x[num3x],
                     dssd3xname,
                     logicWorld,
@@ -394,7 +496,7 @@ for (int j = 0; j < 16; j++) {
 
   physDSSD3[num3y] = 
   new G4PVPlacement(0,
-                    G4ThreeVector(0*mm,(24.84375-3.125*j)*mm,228*um),
+                    G4ThreeVector(0*mm,(24.84375-3.125*j)*mm,228*um-19*mm),
                     logicDSSD3y[num3y],
                     dssd3yname,
                     logicWorld,
